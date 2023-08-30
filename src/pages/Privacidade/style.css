@@ -1,0 +1,98 @@
+/* MAIN */
+
+.privacidade main{
+	background-color: var(--cinza);
+}
+
+.privacidade .posicionamento{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.privacidade h1 {
+	width: 1em;
+	position: absolute;
+	left: -999em;
+	overflow: hidden;
+}
+
+.privacidade .conteudo{
+	padding: 60px 0 60px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	align-items: center;
+}
+
+.privacidade .topico {
+	width: 80%;
+	text-align: start;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.privacidade .topico h2{
+	font-size: 32px;
+	color: var(--verde);
+	font-family: var(--vw);
+}
+
+.privacidade .topico p{
+	font-size: 21px;
+	color: var(--azul);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* FIM DO MAIN */
+
+
+@media screen and (max-width: 1000px) {
+
+	.privacidade .login a{
+		width: fit-content;
+	}
+
+	.privacidade .facilitando img{
+		display: none;
+	}
+
+	.privacidade .facilitando>div h2{
+		text-align: center;
+	}
+
+
+}
+
+@media screen and (max-width: 900px) {
+	/* MAIN */
+
+	.privacidade .nossa_missao{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.privacidade .cards{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: fit-content;
+		gap: 15px;
+	}
+
+	.privacidade .card{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 15px;
+		height: fit-content;
+	}
+	
+	.privacidade .valores{
+		height: fit-content;
+	}
+}
