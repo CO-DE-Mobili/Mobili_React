@@ -1,0 +1,560 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'VW Head';
+    src: url('./fonts/VWText-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Verdana';
+    src: url('./fonts/verdana.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    /* cor */
+    --azul: #001E50;
+    --verde: #61D248;
+    --cinza: #E7E7E7;
+    --branco: #FFFFFF;
+    --preto: #000000;
+    /*fonte*/
+    --vw: 'VW Head';
+    --verdana: 'Verdana';
+}
+
+
+/* MAIN */
+
+body {
+    background-color: var(--branco);
+}
+
+main {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/* ASIDE */
+
+aside {
+    position: fixed;
+    left: 0;
+    width: 20%;
+    height: 100vh;
+    /* float: left; */
+    background-color: var(--azul);
+    color: #92929D;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+aside img {
+    align-self: center;
+    height: 50px;
+}
+
+aside>div h2 {
+    font-family: var(--verdana);
+    font-weight: 300;
+    color: white;
+}
+
+aside>div a {
+    text-decoration: none;
+    font-family: var(--vw);
+    font-size: 17px;
+}
+
+.aside_top {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px 0 150px;
+}
+
+.link_perfil {
+    width: 100%;
+    height: 40px;
+    max-width: 300px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    font-family: var(--vw);
+}
+
+.link_perfil a {
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--branco);
+}
+
+.link_gerenciamento {
+    width: 100%;
+    height: 40px;
+    max-width: 300px;
+    border-radius: 8px;
+    color: lightgray;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--cinza);
+}
+
+.link_gerenciamento a {
+    width: 100%;
+    height: 100%;
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--cinza);
+}
+
+.aside_top img {
+    height: 25px;
+}
+
+.divisoria {
+    width: 100%;
+    height: 1px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    margin: 15px 0 15px;
+}
+
+.rede_social {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rede_social nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rede_social nav div {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rede_social nav img {
+    height: 100%;
+}
+
+.perfil {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 300px;
+}
+
+.perfil>div {
+    width: max-content;
+    display: flex;
+    gap: 20px;
+}
+
+.perfil div a {
+    align-self: center;
+}
+
+.perfil>div div {
+    display: flex;
+    flex-direction: column;
+}
+
+.perfil>div img {
+    height: 30px;
+}
+
+.perfil img {
+    height: 60px;
+}
+
+.perfil a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* FIM DO ASIDE */
+
+
+/* CONTEUDO */
+
+.conteudo {
+    /* background-color: #001e50; */
+    /* background-color: var(--cinza); */
+    /* background-color: #001e5080; */
+    /* background-color: #001e5060; */
+    /* background-color: #BFC6D3; */
+    /* background-color: #001e5020; */
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 0 5% 5%;
+    width: 80%;
+    margin-left: 500px;
+
+}
+
+.conteudo img {
+    width: 300px;
+    align-self: self-end;
+}
+
+
+.perfil_principal img {
+    width: 30%;
+    align-self: center;
+}
+
+.perfil_info {
+    font-family: var(--verdana);
+    width: 100%;
+    height: fit-content;
+}
+
+.perfil_info form>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.perfil_info form>div>div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: var(--azul);
+}
+
+.perfil_principal form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.perfil_principal form input {
+    border-radius: 5px;
+    border: 2px solid rgba(203, 210, 220, 0.5);
+    width: 250px;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 15px;
+    height: 40px;
+    background-color: var(--branco);
+}
+
+.perfil_principal form input:focus {
+    color: var(--azul);
+    outline-color: var(--azul);
+    caret-color: var(--azul);
+    border: 2px solid var(--azul);
+}
+
+.form_submit {
+    flex-direction: column;
+    gap: 5px;
+    align-self: flex-start;
+}
+
+.form_submit label {
+    align-self: flex-start;
+    color: var(--azul);
+}
+
+.perfil_info input.submit_button {
+    color: orange;
+    border: 2px solid orange;
+    background-color: white;
+    width: 150px;
+    height: 40px;
+    font-family: var(--verdana);
+    font-size: 16px;
+    padding: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.perfil_info input.submit_button:hover {
+    background-color: orange;
+    color: var(--branco);
+    transition: 0.3s;
+}
+
+.phone {
+    display: none;
+}
+
+.submit_button {
+    color: orange;
+    font-family: var(--vw);
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    border-radius: 4px;
+    padding: 9px 33px;
+    border: 1px solid orange;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 15vh;
+    text-align: center;
+}
+
+.submit_button:hover {
+    background-color: orange;
+    color: var(--branco);
+    transition: 0.3s;
+}
+
+.submit_button_cancelar {
+    color: #DC2626;
+    font-family: var(--vw);
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    border-radius: 4px;
+    padding: 9px;
+    border: 1px solid #DC2626;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 15vh;
+    text-align: center;
+}
+
+.submit_button_cancelar:hover {
+    background-color: #DC2626;
+    color: var(--branco);
+    transition: 0.3s;
+}
+
+.submit_button_salvar {
+    color: var(--verde);
+    font-family: var(--vw);
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    border-radius: 4px;
+    padding: 9px;
+    border: 1px solid var(--verde);
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 15vh;
+    text-align: center;
+}
+
+.submit_button_salvar:hover {
+    background-color: var(--verde);
+    color: var(--branco);
+    transition: 0.3s;
+}
+
+
+
+
+
+
+/* FIM CONTEUDO */
+
+@media screen and (max-width: 1300px) {
+    .aside_top {
+        margin: 10px 0 120px;
+    }
+
+    .perfil_principal form input {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .rede_social {
+        text-align: center;
+    }
+
+    .rede_social nav {
+        flex-wrap: wrap;
+    }
+
+    .rede_social nav>div {
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    .perfil {
+        flex-direction: column;
+        gap: 12px;
+        height: fit-content;
+    }
+
+    .perfil>img {
+        width: 60px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    aside div h2 {
+        font-size: 23px;
+    }
+
+    .perfil_info {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 955px) {
+    main {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    body {
+        background-color: var(--branco);
+    }
+
+    aside {
+        display: none;
+    }
+
+    .phone {
+        display: initial;
+    
+    }
+
+    .navigation {
+        width: 100%;
+        height: 90px;
+        background: var(--azul);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: var(--verdana);
+        backdrop-filter: blur(5px);
+        display: flex;
+        transform-origin: top;
+        transition-duration: .25s;
+        transition-timing-function: cubic-bezier(.6, .13, .32, 1.46);
+        margin: 0 auto;
+    }
+
+    #input__menu-toggle:checked~.label-for-menu .one {
+        transform-origin: left;
+        transform: translate(15%, -2px) rotate(45deg);
+    }
+
+    #input__menu-toggle:checked~.label-for-menu .two {
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    #input__menu-toggle:checked~.label-for-menu .three {
+        transform-origin: left;
+        transform: translate(15%, 2px) rotate(-45deg);
+    }
+
+    #input__menu-toggle:checked~.navigation ul {
+        transform: scale(1, 1);
+    }
+
+    #input__menu-toggle:checked~.phone .navigation {
+        transition-property: opacity;
+        opacity: 1;
+        transition-delay: .2s;
+        transition-duration: .1s;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation ul li {
+        position: relative;
+        list-style: none;
+        width: 70px;
+        height: 70px;
+        z-index: 1;
+    }
+
+    .navigation ul li a {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .navigation ul li a .icon,
+    .close {
+        position: relative;
+        display: block;
+        line-height: 75px;
+        font-size: 1.5em;
+        text-align: center;
+        transition: 0.5s;
+        color: var(--branco);
+    }
+
+    .close {
+        margin-right: 30px;
+    }
+
+   
+}
+
+@media screen and (max-width: 600px) {
+    .conteudo {
+        padding: 0;
+        height: 100%;
+        width: 87%;
+    }
+
+    .perfil_principal {
+        height: fit-content;
+        padding: 10px 0 90px;
+        margin-top: 1%;
+    }
+
+    .perfil_principal form>div {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        min-width: 200px;
+    }
+
+    .perfil_principal form>div>div {
+        width: 100%;
+    }
+
+    .perfil_principal img {
+        width: 75px;
+    }
+
+    .perfil_info input.submit_button {
+        align-self: center;
+        margin: 0;
+    }
+}
