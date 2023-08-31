@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'VW Head';
+    src: url('./fonts/VWText-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Verdana';
+    src: url('./fonts/verdana.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    /* cor */
+    --azul: #001E50;
+    --verde: #61D248;
+    --cinza: #E7E7E7;
+    --branco: #FFFFFF;
+    --preto: #000000;
+    /*fonte*/
+    --vw: 'VW Head';
+    --verdana: 'Verdana';
+}
+
+body {
+    background-color: var(--azul);
+    color: var(--branco);
+    justify-content: center;
+}
+
+.image_voltar a {
+    padding-left: 20px;
+}
+
+.image_voltar {
+    display: flex;
+    align-self: flex-start;
+}
+
+.conteudo {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bc {
+    text-align: center;
+}
+
+.image_voltar a {
+    text-decoration: none;
+    font-family: var(--vw);
+    color: var(--verde);
+    font-size: 30px;
+}
+
+main a {
+    color: var(--branco);
+    justify-content: center;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    gap: 120px;
+}
+
+.alinhamento_imagens {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 40%;
+}
+
+.ilustracao {
+    height: 475px;
+}
+
+.bem_vindo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bem_vindo span {
+    color: #61D248;
+    align-self: flex-start;
+}
+
+.bem_vindo h1 {
+    padding: 0 0 20px;
+}
+
+.dados_usuario form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 20px;
+}
+
+.dados_usuario form label {
+    align-self: flex-start;
+    font-size: 20px;
+}
+
+.dados_usuario form>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.dados_usuario form>div input {
+    padding-left: 10px;
+}
+
+.dados_usuario form div.form_checkbox {
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 19px;
+}
+
+.logo {
+    width: 300px;
+    margin: 20px;
+}
+
+.pagina {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--verdana);
+}
+
+.dados_usuario input {
+    height: 30px;
+}
+
+.form_checkbox>div {
+    display: flex;
+    gap: 10px;
+}
+
+.form_checkbox>div a {
+    align-self: center;
+    text-decoration: none;
+}
+
+.button_cont {
+    border: 2px solid #61D248;
+    border-radius: 4px;
+    color: #61D248;
+    padding: 10px;
+    font-family: var(--verdana);
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.etapa2_cadastro {
+    width: 100%;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.etapa2_cadastro .voltar_btn {
+    border: 2px solid rgba(203, 210, 220, 0.5);
+    color: rgba(203, 210, 220, 0.5);
+    transition: 0.3s;
+}
+
+.etapa2_cadastro .voltar_btn:hover {
+    background-color: rgba(203, 210, 220, 0.5);
+    color: var(--azul);
+    transition: 0.3s;
+}
+
+.etapa2_cadastro a {
+    border: 2px solid #61D248;
+    border-radius: 4px;
+    color: #61D248;
+    padding: 10px;
+    font-family: var(--verdana);
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+    width: 40%;
+    text-align: center;
+}
+
+.button_cont:hover,
+.etapa2_cadastro a:hover {
+    background-color: var(--verde);
+    color: var(--azul);
+    transition: 0.3s;
+}
+
+.conta_cadastro a {
+    color: #61D248;
+    text-decoration: none;
+    margin: 15px;
+}
+
+.conta_cadastro {
+    align-self: center;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.form_checkbox a {
+    gap: 15px;
+    align-self: center;
+    text-decoration: none;
+}
+
+#email,
+#nome,
+#senha {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid rgba(203, 210, 220, 0.5);
+    border-radius: 4px;
+    height: 36px;
+    font-family: var(--verdana);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13.5px;
+    line-height: 39px;
+    letter-spacing: -0.01em;
+    color: var(--branco);
+    background-color: var(--azul);
+}
+
+#email:focus,
+#nome:focus,
+#senha:focus {
+    color: var(--branco);
+    outline-color: var(--verde);
+    caret-color: var(--verde);
+}
+
+.image_voltar_responsivo {
+    display: none;
+}
+
+@media screen and (max-width:1000px) {
+    .conteudo {
+        width: 100%;
+    }
+    .dados_usuario form {
+        width: 100%;
+    }
+    #email,
+    #nome,
+    #senha {
+        height: 56px;
+        width: 100%;
+    }
+    .alinhamento_imagens {
+        display: none;
+    }
+    .pagina {
+        padding-bottom: 80px;
+        width: 90%;
+    }
+    .image_voltar_responsivo {
+        display: initial;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-bottom: 35px;
+    }
+    .image_voltar_responsivo a {
+        text-decoration: none;
+        color: var(--verde);
+        font-size: 25px;
+    }
+    .bem_vindo {
+        margin: 0 auto;
+    }
+    .button_cont {
+        height: 54px;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 13px;
+    }
+    .bem_vindo span {
+        color: #61D248;
+        width: 280px;
+        text-align: center;
+    }
+    .dados_usuario form {
+        width: 100%;
+    }
+    .dados_usuario form div.form_checkbox {
+        font-size: 16px;
+    }
+    .dados_usuario {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .conta_cadastro {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .bem_vindo h1 {
+        text-align: center;
+    }
+}
