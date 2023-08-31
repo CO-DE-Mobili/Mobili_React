@@ -76,7 +76,7 @@ aside>div a {
     font-size: 17px;
 }
 
-.aside_top {
+.aside_top_perfilParceiro {
     display: flex;
     gap: 15px;
     flex-direction: column;
@@ -84,7 +84,7 @@ aside>div a {
     margin: 10px 0 150px;
 }
 
-.link_perfil {
+.link_perfilParceiro {
     width: 100%;
     height: 40px;
     max-width: 300px;
@@ -94,7 +94,7 @@ aside>div a {
     font-family: var(--vw);
 }
 
-.link_perfil a {
+.link_perfilParceiro a {
     width: 100%;
     height: 100%;
     padding-left: 20px;
@@ -104,7 +104,7 @@ aside>div a {
     color: var(--branco);
 }
 
-.link_gerenciamento {
+.link_gerenciamento_perfilParceiro {
     width: 100%;
     height: 40px;
     max-width: 300px;
@@ -116,7 +116,7 @@ aside>div a {
     font-family: var(--cinza);
 }
 
-.link_gerenciamento a {
+.link_gerenciamento_perfilParceiro a {
     width: 100%;
     height: 100%;
     padding-left: 16px;
@@ -126,11 +126,11 @@ aside>div a {
     color: var(--cinza);
 }
 
-.aside_top img {
+.aside_top_perfilParceiro img {
     height: 25px;
 }
 
-.divisoria {
+.linhaDivisoria_perfilParcero{
     width: 100%;
     height: 1px;
     background-color: aliceblue;
@@ -138,70 +138,74 @@ aside>div a {
     margin: 15px 0 15px;
 }
 
-.rede_social {
+.rede_social_perfilParceiro {
     display: flex;
     gap: 15px;
     flex-direction: column;
     justify-content: center;
 }
 
-.rede_social nav {
+.rede_social_perfilParceiro nav {
     display: flex;
     justify-content: space-between;
 }
 
-.rede_social nav div {
+.rede_social_perfilParceiro nav div {
     width: 40%;
     display: flex;
     justify-content: space-between;
 }
 
-.rede_social nav img {
+.rede_social_perfilParceiro nav img {
     height: 100%;
 }
 
-.perfil {
+.perfil_divisoria_perfilParceiro {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 300px;
 }
 
-.perfil>div {
+.perfil_divisoria_perfilParceiro>div {
     width: max-content;
     display: flex;
     gap: 20px;
 }
 
-.perfil div a {
+.perfil_divisoria_perfilParceiro div a {
     align-self: center;
 }
 
-.perfil>div div {
+.perfil_divisoria_perfilParceiro>div div {
     display: flex;
     flex-direction: column;
 }
 
-.perfil>div img {
+.perfil_divisoria_perfilParceiro>div img {
     height: 30px;
 }
 
-.perfil img {
+.perfil_divisoria_perfilParceiro img {
     height: 60px;
 }
 
-.perfil a {
+.perfil_divisoria_perfilParceiro a {
     text-decoration: none;
     color: white;
 }
 
 
+.perfil_principal_perfilParceiro {
+    width: 100%;
+}
+
 /* FIM DO ASIDE */
 
 
-/* CONTEUDO */
+/* conteudo_perfilParceiro */
 
-.conteudo {
+.conteudo_perfilParceiro {
     /* background-color: #001e50; */
     /* background-color: var(--cinza); */
     /* background-color: #001e5080; */
@@ -214,47 +218,45 @@ aside>div a {
     align-items: center;
     padding: 5% 0 5% 5%;
     width: 80%;
-    margin-left: 500px;
+    margin-left: 369px;
 
 }
 
-.conteudo img {
-    width: 300px;
-    align-self: self-end;
+.conteudo_perfilParceiro img {
+    align-self: stretch;
+    width: 50%;
 }
 
 
-.perfil_principal img {
+.perfil_principal_perfilParceiro img {
     width: 30%;
-    align-self: center;
 }
 
-.perfil_info {
+.perfil_info_perfilParceiro {
     font-family: var(--verdana);
     width: 100%;
     height: fit-content;
 }
 
-.perfil_info form>div {
+.perfil_info_perfilParceiro form>div {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
-.perfil_info form>div>div {
+.perfil_info_perfilParceiro form>div>div {
     display: flex;
     flex-direction: column;
     gap: 5px;
     color: var(--azul);
 }
 
-.perfil_principal form {
+.perfil_principal_perfilParceiro form {
     display: flex;
     flex-direction: column;
     gap: 25px;
+    width: 80%;
 }
 
-.perfil_principal form input {
+.perfil_principal_perfilParceiro form input {
     border-radius: 5px;
     border: 2px solid rgba(203, 210, 220, 0.5);
     width: 250px;
@@ -265,7 +267,7 @@ aside>div a {
     background-color: var(--branco);
 }
 
-.perfil_principal form input:focus {
+.perfil_principal_perfilParceiro form input:focus {
     color: var(--azul);
     outline-color: var(--azul);
     caret-color: var(--azul);
@@ -283,7 +285,7 @@ aside>div a {
     color: var(--azul);
 }
 
-.perfil_info input.submit_button {
+.perfil_info_perfilParceiro input.submit_button_perfilParceiro {
     color: orange;
     border: 2px solid orange;
     background-color: white;
@@ -296,7 +298,7 @@ aside>div a {
     transition: 0.3s;
 }
 
-.perfil_info input.submit_button:hover {
+.perfil_info_perfilParceiro input.submit_button_perfilParceiro:hover {
     background-color: orange;
     color: var(--branco);
     transition: 0.3s;
@@ -306,7 +308,7 @@ aside>div a {
     display: none;
 }
 
-.submit_button {
+.submit_button_perfilParceiro {
     color: orange;
     font-family: var(--vw);
     font-size: 18px;
@@ -322,13 +324,13 @@ aside>div a {
     text-align: center;
 }
 
-.submit_button:hover {
+.submit_button_perfilParceiro:hover {
     background-color: orange;
     color: var(--branco);
     transition: 0.3s;
 }
 
-.submit_button_cancelar {
+.submit_button_perfilParceiro_cancelar {
     color: #DC2626;
     font-family: var(--vw);
     font-size: 18px;
@@ -344,13 +346,13 @@ aside>div a {
     text-align: center;
 }
 
-.submit_button_cancelar:hover {
+.submit_button_perfilParceiro_cancelar:hover {
     background-color: #DC2626;
     color: var(--branco);
     transition: 0.3s;
 }
 
-.submit_button_salvar {
+.submit_button_perfilParceiro_salvar {
     color: var(--verde);
     font-family: var(--vw);
     font-size: 18px;
@@ -366,49 +368,59 @@ aside>div a {
     text-align: center;
 }
 
-.submit_button_salvar:hover {
+.submit_button_perfilParceiro_salvar:hover {
     background-color: var(--verde);
     color: var(--branco);
     transition: 0.3s;
 }
 
 
+#email, #nome {
+    margin-right: 30px;
+}
+
+
+.botoes_editar_perfilParceiro {
+
+    width: 100%;
+    justify-content: space-between;
+
+
+}
 
 
 
-
-/* FIM CONTEUDO */
+/* FIM conteudo_perfilParceiro */
 
 @media screen and (max-width: 1300px) {
-    .aside_top {
+    .aside_top_perfilParceiro {
         margin: 10px 0 120px;
     }
 
-    .perfil_principal form input {
-        width: 100%;
+    .perfil_principal_perfilParceiro form input {
         font-size: 14px;
     }
 
-    .rede_social {
+    .rede_social_perfilParceiro {
         text-align: center;
     }
 
-    .rede_social nav {
+    .rede_social_perfilParceiro nav {
         flex-wrap: wrap;
     }
 
-    .rede_social nav>div {
+    .rede_social_perfilParceiro nav>div {
         gap: 20px;
         justify-content: space-between;
     }
 
-    .perfil {
+    .perfil_divisoria_perfilParceiro {
         flex-direction: column;
         gap: 12px;
         height: fit-content;
     }
 
-    .perfil>img {
+    .perfil_divisoria_perfilParceiro>img {
         width: 60px;
     }
 }
@@ -418,7 +430,7 @@ aside>div a {
         font-size: 23px;
     }
 
-    .perfil_info {
+    .perfil_info_perfilParceiro {
         width: 85%;
     }
 }
@@ -439,7 +451,7 @@ aside>div a {
 
     .phone {
         display: initial;
-    
+
     }
 
     .navigation {
@@ -522,38 +534,115 @@ aside>div a {
         margin-right: 30px;
     }
 
-   
-}
+    .perfil_principal_perfilParceiro {
+        justify-content: center;
+        width: 100%;
+    }
 
-@media screen and (max-width: 600px) {
-    .conteudo {
+    .perfil_principal_perfilParceiro img {
+        width: 100px;
+    }
+
+    .conteudo_perfilParceiro {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 0;
-        height: 100%;
-        width: 87%;
+        margin: 0 auto;
     }
 
-    .perfil_principal {
-        height: fit-content;
-        padding: 10px 0 90px;
-        margin-top: 1%;
+    .conteudo_perfilParceiro>img {
+        display: none;
     }
 
-    .perfil_principal form>div {
+    .perfil_principal_perfilParceiro form input {
+        width: 75vw;
+        height: 56px;
+    }
+
+    .perfil_info_perfilParceiro input.submit_button_perfilParceiro {
+        width: 75vw;
+        height: 54px;
+    }
+
+    .perfil_principal_perfilParceiro form>div {
         flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
         min-width: 200px;
     }
 
-    .perfil_principal form>div>div {
+    .perfil_principal_perfilParceiro form>div>div {
+        min-width: 200px;
+    }
+
+    .perfil_info_perfilParceiro input.submit_button_perfilParceiro {
+        align-self: center;
+        margin: 0;
+    }
+
+    .submit_button_perfilParceiro,
+    .submit_button_perfilParceiro_salvar {
+        width: 75vw;
+        height: 56px;
+        padding: 15px 0;
+    }
+
+    .submit_button_perfilParceiro_salvar {
+        background-color: var(--verde);
+        color: var(--branco);
+    }
+
+    .submit_button_perfilParceiro_cancelar {
+        border: none;
+    }
+
+    .submit_button_perfilParceiro_cancelar:hover {
+        background-color: var(--branco);
+        color: #DC2626;
+    }
+
+    .botoes_editar_perfilParceiro {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0 auto;
+
+
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .conteudo_perfilParceiro {
+        padding: 0;
+        height: 100%;
+        width: 87%;
+    }
+
+    .perfil_principal_perfilParceiro {
+        height: fit-content;
+        padding: 10px 0 90px;
+        margin-top: 1%;
+    }
+
+    .perfil_principal_perfilParceiro form>div {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        min-width: 200px;
+    }
+
+    .perfil_principal_perfilParceiro form>div>div {
         width: 100%;
     }
 
-    .perfil_principal img {
+    .perfil_principal_perfilParceiro img {
         width: 75px;
     }
 
-    .perfil_info input.submit_button {
+    .perfil_info_perfilParceiro input.submit_button_perfilParceiro {
         align-self: center;
         margin: 0;
     }

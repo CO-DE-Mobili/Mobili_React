@@ -10,18 +10,17 @@ import fotoPerfilUsuario from '../../assets/images/REBECA.png';
 
 import Menu_parceiro from '../../components/menu_parceiro';
 
+import '../perfil_parceiro/style.css';
 
 
-import './style.css';
-
-
-function Perfil_parceiro() {
+function Editar_perfil_parceiro() {
 
     return (
         <>
+
             <main>
-                <Menu_parceiro/>
-                
+                <Menu_parceiro />
+
                 <section className="conteudo_perfilParceiro">
                     <div className="perfil_principal_perfilParceiro">
 
@@ -32,21 +31,21 @@ function Perfil_parceiro() {
                                 <div>
                                     <div>
                                         <label htmlFor="nome">Nome</label>
-                                        <input type="text" id="nome" placeholder="Rebeca" disabled />
+                                        <input type="text" id="nome" placeholder="Rebeca"  />
                                     </div>
                                     <div>
                                         <label htmlFor="sobrenome">Sobrenome</label>
-                                        <input type="text" id="sobrenome" placeholder="Flores" disabled/>
+                                        <input type="text" id="sobrenome" placeholder="Flores"  />
                                     </div>
                                 </div>
                                 <div>
                                     <div>
                                         <label htmlFor="email">E-mail</label>
-                                        <input type="email" id="email" placeholder="eu@email.com" disabled/>
+                                        <input type="email" id="email" placeholder="eu@email.com"  />
                                     </div>
                                     <div>
                                         <label htmlFor="telefone">Telefone</label>
-                                        <input type="tel" id="telefone" placeholder="1234-5678" disabled/>
+                                        <input type="tel" id="telefone" placeholder="1234-5678"  />
                                     </div>
                                 </div>
                                 <div className="form_submit">
@@ -55,13 +54,17 @@ function Perfil_parceiro() {
                                         type="password"
                                         id="senha"
                                         defaultValue="senhasuperforte"
-                                        disabled
+                                        
                                     />
                                 </div>
                                 {/* <input type="submit" value="Editar" class="submit_button"> */}
-                                <a className="submit_button_perfilParceiro" href="./editarperfil.html">
-                                    Editar
-                                </a>
+                                <div className="botoes_editar_perfilParceiro">
+                                    <a className="submit_button_perfilParceiro_cancelar" href="./perfil_parceiro.html">Cancelar</a>
+
+                                    <div>
+                                        <a className="submit_button_perfilParceiro_salvar" href="#">Salvar</a>
+                                    </div>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -74,4 +77,4 @@ function Perfil_parceiro() {
     )
 }
 
-export default Perfil_parceiro;
+export default Editar_perfil_parceiro;
