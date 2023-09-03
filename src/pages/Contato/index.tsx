@@ -1,7 +1,10 @@
 import "./style.css";
+
 import ilustracao_um from "../../assets/images/ilustra_1_contato.png";
 import ilustracao_dois from "../../assets/images/ilustra_2_contato.png";
+
 import { useState } from "react";
+// import api from "../../utils/api";
 
 function Contato() {
 	const [nome, setNome] = useState<string>("");
@@ -20,9 +23,15 @@ function Contato() {
 			telefone: telefone,
 			mensagemTexto: mensagemTexto
 		}
-
-		console.log(mensagem);
 		
+		// api.post("mensagens", mensagem)
+		// 	.then((response:any) => {
+		// 		console.log("foi " + response.data);
+				
+		// 	})
+		// 	.catch((error: any) =>{
+		// 		console.log("n foi " + error)
+		// 	})
 	}
 
 	return (
