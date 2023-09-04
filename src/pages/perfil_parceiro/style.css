@@ -162,7 +162,7 @@ aside>div a {
 
 .perfil_divisoria_perfilParceiro {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     max-width: 300px;
 }
