@@ -6,14 +6,14 @@
 
 @font-face {
   font-family: 'VW Head';
-  src: url('../geral/fonts/VWText-Regular.otf') format('truetype');
+  src: url('../src/assets/fonts/VWText-Regular.otf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Verdana';
-  src: url('../geral/fonts/verdana.ttf') format('truetype');
+  src: url('../src/assets/fonts/verdana.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
