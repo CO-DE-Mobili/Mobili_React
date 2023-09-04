@@ -11,6 +11,8 @@ import iconeTwitter_perfil from '../../assets/images/twitter_perfil.svg';
 import iconeLinkedin_perfil from '../../assets/images/linkedin_perfil.svg';
 import iconeInstagram_perfil from '../../assets/images/instagram_perfil.svg';
 
+import '../../pages/perfil_parceiro/style.css'
+
 function Menu_parceiro() {
 
     return (

@@ -1,7 +1,3 @@
-import React from 'react';
-import { render } from 'react-dom';
-
-
 import ilustraPerfil from '../../assets/images/ilustra1_parceiro.svg';
 import fotoPerfilUsuario from '../../assets/images/REBECA.png';
 
