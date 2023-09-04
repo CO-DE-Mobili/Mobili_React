@@ -47,7 +47,7 @@
 
 #footer {
 
-    width: 100%;
+    width: 100vw;
     background-color: var(--azul);
 }
 
@@ -71,7 +71,7 @@
 }
 
 #footer .redes_sociais img {
-    width: 30px;
+    height: 39px;
     margin-right: 20px;
 }
 
