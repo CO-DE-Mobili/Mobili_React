@@ -3,8 +3,8 @@ import "./style.css"
 import { Link } from "react-router-dom";
 
 //imagens
-import ilutracaoCadastro from "../../assets/images/ilustra_cadastro.svg";
-import seta from "../../assets/images/seta.png";
+import ilutracaoCadastro from "../../../assets/images/ilustra_cadastro.svg";
+import seta from "../../../assets/images/seta.png";
 
 function UsuarioEtapa2() {
     return(
