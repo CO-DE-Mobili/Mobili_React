@@ -13,15 +13,14 @@ import imgEdit from "../../assets/images/edit.svg";
 import imgSmile from "../../assets/images/home_smile.svg";
 import imgAna from "../../assets/images/ANA.png";
 import imgRebeca from "../../assets/images/REBECA.png";
-
-import Header from "../../components/Header/index";
-
-//rotas
 import { Link } from "react-router-dom";
 
+
+//rotas
+import Header from "../../components/Header/index";
+import Footer from "../../components/Footer";
+
 function home() {
-
-
   return (
     <main className="home">
       <Header />
@@ -155,10 +154,8 @@ function home() {
           </div>
         </div>
       </section>
+      <Footer/>
     </main>
-
-
-
   )
 
 }
