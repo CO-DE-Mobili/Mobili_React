@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'VW Head';
+    src: url('./fonts/VWText-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Verdana';
+    src: url('./fonts/verdana.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    /* cor */
+    --azul: #001E50;
+    --verde: #61D248;
+    --cinza: #E7E7E7;
+    --branco: #FFFFFF;
+    --preto: #000000;
+
+    /*fonte*/
+
+    --vw: 'VW Head';
+    --verdana: 'Verdana';
+
+}
+
+.home .body {
+    background-color: #E8E9EB;
+
+}
+
+
+
+
+/*MAIN*/
+
+
+.home .posicionamento_texto_home {
+    display: flex;
+    align-items: center;
+}
+
+/*BANNER*/
+
+.home .posicionamento{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    }
+
+.home .banner_home {
+    background-color: var(--azul);
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+.home .texto_banner_home,
+.home .texto_sessao2_home {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 94px;
+}
+
+.home .texto_banner_home h2 {
+    font-size: 40px;
+    font-family: var(--vw);
+    color: var(--verde);
+    font-weight: 400;
+    line-height: 65px;
+}
+
+.home .texto_banner_home p {
+    font-size: 22px;
+    font-family: var(--verdana);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 39px;
+    letter-spacing: -0.28px;
+    color: var(--branco);
+
+}
+
+.home .texto_banner_home a {
+    border: 2px solid var(--verde);
+    /* height: 56px; */
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 57px;
+    letter-spacing: -0.01em;
+    color: var(--verde);
+    text-decoration: none;
+    font-family: var(--verdana);
+    margin-top: 58px;
+    transition: 0.3s;
+}
+
+
+.home .texto_banner_home a:hover {
+    transition: 0.3s;
+    background-color: var(--verde);
+    color: var(--azul);
+
+}
+
+/*FIM BANNER*/
+
+.home h1 {
+    display: none;
+    visibility: hidden;
+}
+
+/*SESSAO 1*/
+
+.home .sessao1_home {
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.home .sessao1_home h3 {
+    font-size: 40px;
+    font-family: var(--vw);
+    color: var(--azul);
+    font-weight: 400;
+    line-height: 65px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.home .filaParceiros_home {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.home .filaParceiros_home img {
+    width: 21vh;
+}
+
+/*FIM SESSAO 1*/
+
+/*SESSAO 2*/
+
+.home .sessao2_home {
+    margin-top: 120px;
+    margin-bottom: 80px;
+}
+
+.home .texto_sessao2_home span {
+    color: var(--verde);
+    text-transform: uppercase;
+    font-family: var(--vw);
+    font-weight: 700;
+}
+
+.home .texto_sessao2_home h4 {
+    font-size: 40px;
+    font-family: var(--vw);
+    color: var(--azul);
+    font-weight: 400;
+    line-height: 65px;
+}
+
+
+.home .texto_sessao2_home a {
+    border: 2px solid var(--azul);
+    /* height: 56px; */
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 57px;
+    letter-spacing: -0.01em;
+    color: var(--azul);
+    text-decoration: none;
+    font-family: var(--verdana);
+    margin-top: 58px;
+    transition: 0.3s;
+}
+
+.home .texto_sessao2_home a:hover {
+    background-color: var(--azul);
+    color: var(--branco);
+    transition: 0.3s;
+
+}
+
+.home .texto_sessao2_home p {
+    font-size: 22px;
+    font-family: var(--verdana);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 39px;
+    letter-spacing: -0.28px;
+    color: var(--azul);
+
+}
+
+
+/*FIM SESSAO 2*/
+
+/*SESSAO 3*/
+
+
+
+
+.home .sessao3_home h5 {
+    font-size: 40px;
+    font-family: var(--vw);
+    color: var(--azul);
+    font-weight: 400;
+    line-height: 65px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.home .filaCards_home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home .card_etapas_home {
+    width: 355px;
+    height: 276px;
+    border-radius: 8px;
+    border: 2px solid var(--azul);
+
+
+}
+
+.home .header_card_home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px;
+}
+
+.home .header_card_home p {
+    color: var(--verde);
+    text-align: center;
+    font-size: 80px;
+    font-family: 'ABeeZee', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.home .conteudo_card_home p {
+    text-align: center;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 57px;
+    letter-spacing: -0.01em;
+    color: var(--azul);
+    font-family: var(--verdana);
+}
+
+/*FIM SESSAO 3*/
+
+/*SESSAO 4*/
+.home .sessao4_home h5 {
+    font-size: 40px;
+    font-family: var(--vw);
+    color: var(--azul);
+    font-weight: 400;
+    line-height: 65px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 120px;
+}
+
+.home .feedDepoimentos_home {
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home .cardDepoimento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--azul);
+    border-radius: 4px;
+    width: 47%;
+    height: 350px;
+    padding: 65px;
+}
+
+.home .perfil_depoimento img {
+    width: 25vh;
+    padding-right: 25px;
+}
+
+.home .textoDepoimento h6 {
+    color: var(--branco);
+    font-size: 20px;
+    font-family: var(--vw);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: -0.28px;
+}
+
+.home .textoDepoimento span {
+    color: var(--verde);
+    font-size: 20px;
+    font-family: var(--vw);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: -0.28px;
+}
+
+.home .textoDepoimento p {
+    color: var(--branco);
+    font-size: 18px;
+    font-family: var(--vw);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: -0.28px;
+}
+
+/*FIM SESSAO 4*/
+
+/*FIM MAIN*/
+
+
+
+
+@media screen and (max-width: 1220px) {
+
+    .banner_home {
+        height: 100vh;
+    }
+
+    .ilustra_banner img {
+        width: 35vh;
+    }
+
+}
+
+@media screen and (max-width: 954px) {
+    
+    .home .banner_home {
+        height: auto;
+        padding: 20px;
+    }
+
+    .home .posicionamento_texto_home {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 110px;
+    }
+
+    .home .posicionamento_texto_home img {
+        display: none;
+    }
+
+    .home .texto_banner_home,
+    .home .texto_sessao2_home {
+
+        margin-top: 100px;
+        margin-right: 0;
+    }
+
+    .home .texto_banner_home h2 {
+        font-size: 33px;
+        line-height: 42px;
+        margin-bottom: 20px;
+    }
+
+    .home .filaCards_home {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .home .feedDepoimentos_home {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .home .cardDepoimento {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        padding: 0;
+        padding-top: 32px;
+    }
+
+    .home .textoDepoimento {
+        padding-left: 56px;
+        padding-right: 56px;
+        padding-bottom: 36px;
+    }
+
+    .home .perfil_depoimento img {
+        width: 147px;
+        margin: 0 auto;
+    }
+
+    .home .filaParceiros_home img {
+        width: 11vh;
+    }
+
+    .home header {
+        z-index: 1;
+        position: fixed;
+    }
+
+    .home .menu img {
+        order: 2;
+        margin-left: 30px;
+        width: 100%;
+    }
+
+    .home .sessao2_home {
+        margin-top: 0;
+    }
+}
