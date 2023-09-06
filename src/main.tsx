@@ -18,12 +18,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <Routes>{/*Indica uma lista de rotas*/}
-        <Route path='/' element={<Home />} /> {/*Indica o caminho do componente e o nome da rota dele*/}
-        <Route path='/login' element={<Login />} />
-      </Routes>
-    </BrowserRouter>
-  </React.StrictMode>,
+	<React.StrictMode>
+		<BrowserRouter>
+			<Routes>{/*Indica uma lista de rotas*/}
+				<Route path='/' element={<Home />} /> {/*Indica o caminho do componente e o nome da rota dele*/}
+				<Route path='/login' element={<Login />} />
+			</Routes>
+		</BrowserRouter>
+	</React.StrictMode>,
 )
