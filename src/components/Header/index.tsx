@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 
 
 function Header() {
-   
-    
-    function mostrarMenu ()	{
 
-        let menu:any = document.getElementById("menu_links");
-        let menu_barras:any = document.getElementById("menu_hamburguer");
-        
+
+    function mostrarMenu() {
+
+        let menu: any = document.getElementById("menu_links");
+        let menu_barras: any = document.getElementById("menu_hamburguer");
+
         if (window.getComputedStyle(menu).display == "none") {
             menu.style.display = "flex"
             menu_barras.setAttribute("aria-label", "fechar menu");
@@ -25,7 +25,7 @@ function Header() {
 
 
     return (
-        <header id= "header">
+        <header id="header">
             <div className="posicionamento_header posicionamento">
                 <div className="menu">
                     <img src={imgLogoI} alt="" />
@@ -60,24 +60,20 @@ function Header() {
                                     <Link to={"#"}>Suporte</Link>
                                 </li>
                                 <div className="botoes_header_2">
-                                    <a className="login" href="./login/index.html">
-                                        Login
-                                    </a>
-                                    <a className="cadastro" href="./Cadastro/cadastro.html">
-                                        Cadastro
-                                    </a>
+                                    <Link className="login" to={"#"}>Login</Link>
+
+
+                                    <Link className="cadastro" to={"#"}>Cadastro</Link>
+
                                 </div>
                             </ul>
                         </div>
                     </nav>
                 </div>
                 <div className="botoes_header">
-                    <a className="login" href="./login/index.html">
-                        Login
-                    </a>
-                    <a className="cadastro" href="./Cadastro/cadastro.html">
-                        Cadastro
-                    </a>
+                    <Link className="login" to={"#"}>Login</Link>
+
+                    <Link className="cadastro" to={"#"}>Cadastro</Link>
                 </div>
             </div>
         </header>
