@@ -26,7 +26,7 @@ function CadastroUsuario() {
 
     return (
         <>
-            <main className="cadastro">
+            <main className="main-cadastro">
                 <div className="conteudo">
                     <div className="alinhamento_imagens">
                         <div className="image_voltar">

@@ -9,7 +9,7 @@ import seta from "../../../assets/images/seta.png";
 function UsuarioEtapa2() {
     return(
         <>
-         <main>
+         <main className="main-cadastro-etapa2">
             <div className="conteudo">
                 <div className="alinhamento_imagens">
                 <div className="image_voltar">
