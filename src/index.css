@@ -1,31 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
+
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 @font-face {
-  font-family: 'VW Head';
-  src: url('./fonts/VWText-Regular.otf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'VW Head';
+    src: url('./fonts/VWText-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'Verdana';
-  src: url('./fonts/verdana.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Verdana';
+    src: url('./fonts/verdana.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 :root {
-  /* cor */
-  --azul: #001E50;
-  --verde: #61D248;
-  --cinza: #E7E7E7;
-  --branco: #FFFFFF;
-  --preto: #000000;
-  /*fonte*/
-  --vw: 'VW Head';
-  --verdana: 'Verdana';
+    /* cor */
+    --azul: #001E50;
+    --verde: #61D248;
+    --cinza: #E7E7E7;
+    --branco: #FFFFFF;
+    --preto: #000000;
+
+    /*fonte*/
+
+    --vw: 'VW Head';
+    --verdana: 'Verdana';
+
+}
+
+body {
+    background-color: #E8E9EB;
+
+}
+
+.posicionamento{
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
 }

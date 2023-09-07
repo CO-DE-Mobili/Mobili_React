@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'VW Head';
+    src: url('./fonts/VWText-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Verdana';
+    src: url('./fonts/verdana.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.container_principal_login {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--azul);
+    color: var(--branco);
+}
+
+:root {
+    /* cor */
+    --azul: #001E50;
+    --verde: #61D248;
+    --cinza: #E7E7E7;
+    --branco: #FFFFFF;
+    --preto: #000000;
+
+    /*fonte*/
+
+    --vw: 'VW Head';
+    --verdana: 'Verdana';
+
+}
+
+.posicionamento_login{
+    width: 100vw;
+    min-width: 1100px;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+.container_principal_login .image_voltar a {
+    padding-left: 20px;
+}
+
+.container_principal_login .image_voltar {
+    display: flex;
+    align-self: flex-start;
+}
+
+
+
+.container_principal_login .conteudo {
+
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container_principal_login .bc {
+    text-align: center;
+}
+
+
+.container_principal_login .image_voltar a {
+    text-decoration: none;
+    font-family: var(--vw);
+    color: var(--verde);
+    font-size: 30px;
+}
+
+.container_principal_login main a {
+    color: var(--branco);
+    justify-content: center;
+
+}
+
+.container_principal_login main {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    gap: 120px;
+
+}
+
+.container_principal_login .alinhamento_imagens {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 40%;
+
+}
+
+.container_principal_login .ilustracao {
+    height: 475px;
+
+}
+
+.container_principal_login .bem_vindo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container_principal_login .bem_vindo span {
+    color: #61D248;
+    align-self: flex-start;
+}
+
+.container_principal_login .bem_vindo h1 {
+    padding: 0 0 20px;
+}
+
+.container_principal_login .dados_usuario form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 20px;
+
+}
+
+.container_principal_login .dados_usuario form label {
+    align-self: flex-start;
+    font-size: 20px;
+}
+
+.container_principal_login .dados_usuario form>div {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.container_principal_login .dados_usuario form>div input {
+    padding-left: 10px;
+}
+
+.container_principal_login .dados_usuario form div.form_checkbox {
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 19px;
+}
+
+.container_principal_login .logo {
+    width: 300px;
+    margin: 20px;
+
+}
+
+.container_principal_login .pagina {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--verdana);
+
+}
+
+.container_principal_login .dados_usuario input {
+    height: 30px;
+}
+
+.container_principal_login .form_checkbox>div {
+    display: flex;
+    gap: 10px;
+}
+
+.container_principal_login .form_checkbox>div a {
+    align-self: center;
+    color: var(--branco );
+}
+
+
+.container_principal_login .button_cont {
+    border: 2px solid #61D248;
+    border-radius: 4px;
+    color: #61D248;
+    padding: 10px;
+    font-family: var(--verdana);
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+
+
+}
+
+.container_principal_login .button_cont:hover {
+    background-color: var(--verde);
+    color: var(--azul);
+    transition: 0.3s;
+}
+
+
+
+.container_principal_login .conta_cadastro a {
+    color: var(--branco); 
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.container_principal_login .conta_cadastro .spanVerde_login {
+    color: #61D248;
+}
+
+.container_principal_login .conta_cadastro {
+    margin-top: 10px;
+    font-size: 18px;
+
+}
+
+.container_principal_login .form_checkbox a {
+    gap: 15px;
+    align-self: center;
+    color: var(--branco);
+
+}
+
+.container_principal_login #email,
+.container_principal_login #nome,
+.container_principal_login #senha {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid rgba(203, 210, 220, 0.5);
+    border-radius: 4px;
+    height: 36px;
+    font-family: var(--verdana);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13.5px;
+    line-height: 39px;
+    letter-spacing: -0.01em;
+    color: var(--branco);
+    background-color: var(--azul);
+}
+
+.container_principal_login #email:focus,
+.container_principal_login #nome:focus,
+.container_principal_login #senha:focus {
+    color: var(--branco);
+    outline-color: var(--verde);
+    caret-color: var(--verde);
+}
+
+.container_principal_login .image_voltar_responsivo{
+    display: none;
+}
+
+@media screen and (max-width:1000px) {
+
+
+
+    .container_principal_login .conteudo {
+        width: 100%;
+    }
+
+    .container_principal_login .dados_usuario form {
+        width: 100%;
+    }
+
+    .container_principal_login #email,
+    .container_principal_login  #nome,
+    .container_principal_login  #senha {
+        height: 56px;
+        width: 100%;
+
+    }
+
+    .container_principal_login .alinhamento_imagens {
+        display: none;
+    }
+
+
+    .container_principal_login .pagina{
+        padding-bottom: 80px;
+        width: 90%;
+
+    }
+
+
+    .container_principal_login .image_voltar_responsivo{
+        display: initial;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-bottom: 35px;
+    }
+    .container_principal_login .image_voltar_responsivo a{
+        text-decoration: none;
+        color: var(--verde);
+        font-size: 25px;
+    }
+
+
+    .container_principal_login  .bem_vindo {
+        margin: 0 auto;
+    }
+
+    .container_principal_login  .button_cont {
+        height: 54px;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 13px;
+    }
+
+    .container_principal_login .bem_vindo span {
+        color: #61D248;
+        width: 280px;
+        text-align: center;
+    }
+
+
+
+    .container_principal_login .dados_usuario form {
+        width: 100%;
+
+    }
+
+
+    .container_principal_login  .dados_usuario form div.form_checkbox {
+        font-size: 16px;
+    }
+
+    .container_principal_login .dados_usuario {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .container_principal_login .conta_cadastro {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .container_principal_login .bem_vindo h1 {
+        text-align: center;
+    }
+}
