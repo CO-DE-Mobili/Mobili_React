@@ -22,7 +22,7 @@ import Footer from "../../components/Footer";
 
 function home() {
   return (
-    <main className="home">
+    <main className="main-home">
       <Header />
       <h1>home</h1>
       <div className="banner_home">

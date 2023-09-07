@@ -1,81 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&display=swap');
 
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-@font-face {
-    font-family: 'VW Head';
-    src: url('./fonts/VWText-Regular.otf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Verdana';
-    src: url('./fonts/verdana.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-:root {
-    /* cor */
-    --azul: #001E50;
-    --verde: #61D248;
-    --cinza: #E7E7E7;
-    --branco: #FFFFFF;
-    --preto: #000000;
-
-    /*fonte*/
-
-    --vw: 'VW Head';
-    --verdana: 'Verdana';
-
-}
-
-.home .body {
+.main-home .body {
     background-color: #E8E9EB;
 
 }
 
 
 
-
 /*MAIN*/
 
 
-.home .posicionamento_texto_home {
+.main-home .posicionamento_texto_home {
     display: flex;
     align-items: center;
 }
 
 /*BANNER*/
 
-.home .posicionamento{
+.main-home .posicionamento{
     width: 90%;
     max-width: 1100px;
     margin: 0 auto;
     }
 
-.home .banner_home {
+.main-home .banner_home {
     background-color: var(--azul);
     display: flex;
     align-items: center;
     height: 100vh;
 }
 
-.home .texto_banner_home,
-.home .texto_sessao2_home {
+.main-home .texto_banner_home,
+.main-home .texto_sessao2_home {
     height: 100%;
     display: flex;
     flex-direction: column;
     margin-right: 94px;
 }
 
-.home .texto_banner_home h2 {
+.main-home .texto_banner_home h2 {
     font-size: 40px;
     font-family: var(--vw);
     color: var(--verde);
@@ -83,7 +45,7 @@
     line-height: 65px;
 }
 
-.home .texto_banner_home p {
+.main-home .texto_banner_home p {
     font-size: 22px;
     font-family: var(--verdana);
     font-style: normal;
@@ -94,7 +56,7 @@
 
 }
 
-.home .texto_banner_home a {
+.main-home .texto_banner_home a {
     border: 2px solid var(--verde);
     /* height: 56px; */
     text-align: center;
@@ -113,7 +75,7 @@
 }
 
 
-.home .texto_banner_home a:hover {
+.main-home .texto_banner_home a:hover {
     transition: 0.3s;
     background-color: var(--verde);
     color: var(--azul);
@@ -122,20 +84,20 @@
 
 /*FIM BANNER*/
 
-.home h1 {
+.main-home h1 {
     display: none;
     visibility: hidden;
 }
 
 /*SESSAO 1*/
 
-.home .sessao1_home {
+.main-home .sessao1_home {
     margin: 0 auto;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
-.home .sessao1_home h3 {
+.main-home .sessao1_home h3 {
     font-size: 40px;
     font-family: var(--vw);
     color: var(--azul);
@@ -145,13 +107,13 @@
     margin-bottom: 50px;
 }
 
-.home .filaParceiros_home {
+.main-home .filaParceiros_home {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.home .filaParceiros_home img {
+.main-home .filaParceiros_home img {
     width: 21vh;
 }
 
@@ -159,19 +121,19 @@
 
 /*SESSAO 2*/
 
-.home .sessao2_home {
+.main-home .sessao2_home {
     margin-top: 120px;
     margin-bottom: 80px;
 }
 
-.home .texto_sessao2_home span {
+.main-home .texto_sessao2_home span {
     color: var(--verde);
     text-transform: uppercase;
     font-family: var(--vw);
     font-weight: 700;
 }
 
-.home .texto_sessao2_home h4 {
+.main-home .texto_sessao2_home h4 {
     font-size: 40px;
     font-family: var(--vw);
     color: var(--azul);
@@ -180,7 +142,7 @@
 }
 
 
-.home .texto_sessao2_home a {
+.main-home .texto_sessao2_home a {
     border: 2px solid var(--azul);
     /* height: 56px; */
     text-align: center;
@@ -198,14 +160,14 @@
     transition: 0.3s;
 }
 
-.home .texto_sessao2_home a:hover {
+.main-home .texto_sessao2_home a:hover {
     background-color: var(--azul);
     color: var(--branco);
     transition: 0.3s;
 
 }
 
-.home .texto_sessao2_home p {
+.main-home .texto_sessao2_home p {
     font-size: 22px;
     font-family: var(--verdana);
     font-style: normal;
@@ -224,7 +186,7 @@
 
 
 
-.home .sessao3_home h5 {
+.main-home .sessao3_home h5 {
     font-size: 40px;
     font-family: var(--vw);
     color: var(--azul);
@@ -234,13 +196,13 @@
     margin-bottom: 50px;
 }
 
-.home .filaCards_home {
+.main-home .filaCards_home {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.home .card_etapas_home {
+.main-home .card_etapas_home {
     width: 355px;
     height: 276px;
     border-radius: 8px;
@@ -249,14 +211,14 @@
 
 }
 
-.home .header_card_home {
+.main-home .header_card_home {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 32px;
 }
 
-.home .header_card_home p {
+.main-home .header_card_home p {
     color: var(--verde);
     text-align: center;
     font-size: 80px;
@@ -267,7 +229,7 @@
     text-transform: uppercase;
 }
 
-.home .conteudo_card_home p {
+.main-home .conteudo_card_home p {
     text-align: center;
     font-weight: 500;
     font-size: 25px;
@@ -280,7 +242,7 @@
 /*FIM SESSAO 3*/
 
 /*SESSAO 4*/
-.home .sessao4_home h5 {
+.main-home .sessao4_home h5 {
     font-size: 40px;
     font-family: var(--vw);
     color: var(--azul);
@@ -291,14 +253,14 @@
     margin-top: 120px;
 }
 
-.home .feedDepoimentos_home {
+.main-home .feedDepoimentos_home {
     margin-bottom: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.home .cardDepoimento {
+.main-home .cardDepoimento {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -309,12 +271,12 @@
     padding: 65px;
 }
 
-.home .perfil_depoimento img {
+.main-home .perfil_depoimento img {
     width: 25vh;
     padding-right: 25px;
 }
 
-.home .textoDepoimento h6 {
+.main-home .textoDepoimento h6 {
     color: var(--branco);
     font-size: 20px;
     font-family: var(--vw);
@@ -324,7 +286,7 @@
     letter-spacing: -0.28px;
 }
 
-.home .textoDepoimento span {
+.main-home .textoDepoimento span {
     color: var(--verde);
     font-size: 20px;
     font-family: var(--vw);
@@ -334,7 +296,7 @@
     letter-spacing: -0.28px;
 }
 
-.home .textoDepoimento p {
+.main-home .textoDepoimento p {
     color: var(--branco);
     font-size: 18px;
     font-family: var(--vw);
@@ -365,46 +327,46 @@
 
 @media screen and (max-width: 954px) {
     
-    .home .banner_home {
+    .main-home .banner_home {
         height: auto;
         padding: 20px;
     }
 
-    .home .posicionamento_texto_home {
+    .main-home .posicionamento_texto_home {
         flex-direction: column;
         justify-content: center;
         margin: 0 auto;
         margin-top: 110px;
     }
 
-    .home .posicionamento_texto_home img {
+    .main-home .posicionamento_texto_home img {
         display: none;
     }
 
-    .home .texto_banner_home,
-    .home .texto_sessao2_home {
+    .main-home .texto_banner_home,
+    .main-home .texto_sessao2_home {
 
         margin-top: 100px;
         margin-right: 0;
     }
 
-    .home .texto_banner_home h2 {
+    .main-home .texto_banner_home h2 {
         font-size: 33px;
         line-height: 42px;
         margin-bottom: 20px;
     }
 
-    .home .filaCards_home {
+    .main-home .filaCards_home {
         flex-direction: column;
         gap: 30px;
     }
 
-    .home .feedDepoimentos_home {
+    .main-home .feedDepoimentos_home {
         flex-direction: column;
         gap: 30px;
     }
 
-    .home .cardDepoimento {
+    .main-home .cardDepoimento {
         width: 100%;
         flex-direction: column;
         height: auto;
@@ -412,33 +374,33 @@
         padding-top: 32px;
     }
 
-    .home .textoDepoimento {
+    .main-home .textoDepoimento {
         padding-left: 56px;
         padding-right: 56px;
         padding-bottom: 36px;
     }
 
-    .home .perfil_depoimento img {
+    .main-home .perfil_depoimento img {
         width: 147px;
         margin: 0 auto;
     }
 
-    .home .filaParceiros_home img {
+    .main-home .filaParceiros_home img {
         width: 11vh;
     }
 
-    .home header {
+    .main-home header {
         z-index: 1;
         position: fixed;
     }
 
-    .home .menu img {
+    .main-home .menu img {
         order: 2;
         margin-left: 30px;
         width: 100%;
     }
 
-    .home .sessao2_home {
+    .main-home .sessao2_home {
         margin-top: 0;
     }
 }
