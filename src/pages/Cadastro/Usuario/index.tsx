@@ -72,7 +72,10 @@ function CadastroUsuario() {
                                 <div>
                                     <label htmlFor="email">E-mail</label>
                                     <input type="email" id="email" defaultValue="anamaria@yahoo.com" />
-                                    
+                                </div>
+                                <div>
+                                    <label htmlFor="telefone">Telefone</label>
+                                    <input type="'telefone" id="email" defaultValue="(11)5698-8974" />
                                 </div>
                                 <div className="bc">
                                     <Link className="button_cont" to={"#"}>

@@ -216,7 +216,7 @@ main {
     margin: 15px;
 }
 
-.conta_cadastro span{
+.usuario_etapa2 .conta_cadastro span{
     color: var(--verde);
 }
 

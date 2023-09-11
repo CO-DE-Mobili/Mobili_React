@@ -164,6 +164,10 @@
     color: #61D248;
 }
 
+.cadastro .conta_cadastro span {
+    color: white
+}
+
 .cadastro .conta_cadastro {
     align-self: center;
     margin-top: 10px;
