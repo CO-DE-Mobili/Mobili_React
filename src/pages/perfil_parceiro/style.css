@@ -70,7 +70,7 @@ aside>div h2 {
     color: white;
 }
 
-aside>div a {
+aside>div Link {
     text-decoration: none;
     font-family: var(--vw);
     font-size: 17px;
@@ -94,7 +94,7 @@ aside>div a {
     font-family: var(--vw);
 }
 
-.link_perfilParceiro a {
+.link_perfilParceiro Link {
     width: 100%;
     height: 100%;
     padding-left: 20px;
@@ -116,7 +116,7 @@ aside>div a {
     font-family: var(--cinza);
 }
 
-.link_gerenciamento_perfilParceiro a {
+.link_gerenciamento_perfilParceiro Link {
     width: 100%;
     height: 100%;
     padding-left: 16px;
@@ -173,7 +173,7 @@ aside>div a {
     gap: 20px;
 }
 
-.perfil_divisoria_perfilParceiro div a {
+.perfil_divisoria_perfilParceiro div Link {
     align-self: center;
 }
 
@@ -190,7 +190,7 @@ aside>div a {
     height: 60px;
 }
 
-.perfil_divisoria_perfilParceiro a {
+.perfil_divisoria_perfilParceiro Link {
     text-decoration: none;
     color: white;
 }
@@ -508,7 +508,7 @@ aside>div a {
         z-index: 1;
     }
 
-    .navigation ul li a {
+    .navigation ul li Link {
         position: relative;
         display: flex;
         justify-content: center;
@@ -519,7 +519,7 @@ aside>div a {
         font-weight: 500;
     }
 
-    .navigation ul li a .icon,
+    .navigation ul li Link .icon,
     .close {
         position: relative;
         display: block;

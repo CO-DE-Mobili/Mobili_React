@@ -19,8 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>
     <Routes>
-
-    <Route path='/' element={<Gerenciar_perfil_parceiro />} /> 
+    <Route path='/' element={<Perfil_parceiro />} /> 
     </Routes>
     </BrowserRouter>
   </React.StrictMode>

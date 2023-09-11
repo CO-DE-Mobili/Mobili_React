@@ -13,6 +13,9 @@ import iconeInstagram_perfil from '../../assets/images/instagram_perfil.svg';
 
 import '../../pages/perfil_parceiro/style.css'
 
+
+import { Link } from 'react-router-dom';
+
 function Menu_parceiro() {
 
     return (
@@ -25,49 +28,49 @@ function Menu_parceiro() {
                 <div className="aside_top_perfilParceiro">
                     <h2>Menu</h2>
                     <div className="link_perfilParceiro">
-                        <a href="">
+                        <Link to={""}>
                             <img src={iconePerfil} alt="" /> Meu Perfil
-                        </a>
+                        </Link>
                     </div>
                     <div
                         className="link_gerenciamento_perfilParceiro"
                         style={{ backgroundColor: "#001E50" }}
                     >
-                        <a href="">
+                        <Link to={""}>
                             <img src={iconeGerenciamento} alt="" /> Gerenciamento
-                        </a>
+                        </Link>
                     </div>
                 </div>
                 <div className="rede_social_perfilParceiro">
                     <h2>Redes Sociais</h2>
                     <nav>
                         <div>
-                            <a href="">
+                            <Link to={""}>
                                 <img
                                     src={iconeFacebook_perfil}
                                     alt=""
                                 />{" "}
-                            </a>
-                            <a href="">
+                            </Link>
+                            <Link to={""}>
                                 <img
                                     src={iconeTwitter_perfil}
                                     alt=""
                                 />
-                            </a>
+                            </Link>
                         </div>
                         <div>
-                            <a href="">
+                            <Link to={""}>
                                 <img
                                     src={iconeLinkedin_perfil}
                                     alt=""
                                 />
-                            </a>
-                            <a href="">
+                            </Link>
+                            <Link to={""}>
                                 <img
                                     src={iconeInstagram_perfil}
                                     alt=""
                                 />
-                            </a>
+                            </Link>
                         </div>
                     </nav>
                 </div>
@@ -76,15 +79,15 @@ function Menu_parceiro() {
                     <img src={miniRebeca} alt="" />
                     <div>
                         <div>
-                            <a href="#">Rebeca Flores</a>
+                            <Link to={"#"}>Rebeca Flores</Link>
                             <span>eu@gmail.com</span>
                         </div>
-                        <a href="../index.html">
+                        <Link to={"../index.html"}>
                             <img
                                 src={logout}
                                 alt=""
                             />
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </aside>
@@ -94,39 +97,39 @@ function Menu_parceiro() {
                 <div className="navigation">
                     <ul>
                         <li className="list">
-                            <a href="#">
+                            <Link to={"#"}>
                                 <span className="icon">
                                     <PersonOutline color={"#fff"}/>
                                 </span>
-                            </a>
+                            </Link>
                         </li>
                         <li className="list">
-                            <a href="./gerenciamento/index.html">
+                            <Link to={"./gerenciamento/index.html"}>
                                 <span className="icon">
                                     <GridOutline color={"#fff"}/>
                                 </span>
-                            </a>
+                            </Link>
                         </li>
                         <li className="list">
-                            <a href="./criar_propaganda/index.html">
+                            <Link to={"./criar_propaganda/index.html"}>
                                 <span className="icon">
                                     <CreateOutline color={"#fff"}/>
                                 </span>
-                            </a>
+                            </Link>
                         </li>
                         <li className="list">
-                            <a href="./editarperfil.html">
+                            <Link to={"./editarperfil.html"}>
                                 <span className="icon">
                                     <SettingsOutline  color={"#fff"}/>
                                 </span>
-                            </a>
+                            </Link>
                         </li>
                         <li className="list">
-                            <a href="../index.html">
+                            <Link to={"../index.html"}>
                                 <span className="icon">
                                     <ExitOutline color={"#fff"} />
                                 </span>
-                            </a>
+                            </Link>
                         </li>
                         <div className="indicator" />
                     </ul>

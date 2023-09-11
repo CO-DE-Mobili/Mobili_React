@@ -1,6 +1,5 @@
-import React from 'react';
-import { render } from 'react-dom';
-
+import { Link } from 'react-router-dom';
+import React from 'react'
 
 import ilustraPerfil from '../../assets/images/ilustra1_parceiro.svg';
 import fotoPerfilUsuario from '../../assets/images/REBECA.png';
@@ -20,8 +19,8 @@ function Perfil_parceiro() {
     return (
         <>
             <main>
-                <Menu_parceiro/>
-                
+                <Menu_parceiro />
+
                 <section className="conteudo_perfilParceiro">
                     <div className="perfil_principal_perfilParceiro">
 
@@ -36,17 +35,17 @@ function Perfil_parceiro() {
                                     </div>
                                     <div>
                                         <label htmlFor="sobrenome">Sobrenome</label>
-                                        <input type="text" id="sobrenome" placeholder="Flores" disabled/>
+                                        <input type="text" id="sobrenome" placeholder="Flores" disabled />
                                     </div>
                                 </div>
                                 <div>
                                     <div>
                                         <label htmlFor="email">E-mail</label>
-                                        <input type="email" id="email" placeholder="eu@email.com" disabled/>
+                                        <input type="email" id="email" placeholder="eu@email.com" disabled />
                                     </div>
                                     <div>
                                         <label htmlFor="telefone">Telefone</label>
-                                        <input type="tel" id="telefone" placeholder="1234-5678" disabled/>
+                                        <input type="tel" id="telefone" placeholder="1234-5678" disabled />
                                     </div>
                                 </div>
                                 <div className="form_submit">
@@ -58,10 +57,12 @@ function Perfil_parceiro() {
                                         disabled
                                     />
                                 </div>
+                                
                                 {/* <input type="submit" value="Editar" class="submit_button"> */}
-                                <a className="submit_button_perfilParceiro" href="./editarperfil.html">
+                                <Link className="submit_button_perfilParceiro" to={"./editarperfil.html"}>
                                     Editar
-                                </a>
+                                </Link>
+
                             </form>
                         </div>
                     </div>
