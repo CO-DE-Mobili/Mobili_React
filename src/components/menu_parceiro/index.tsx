@@ -1,9 +1,7 @@
-//os componentes ficarão aqui :D
-
 import React from 'react';
 
 import { PersonOutline, GridOutline, CreateOutline, SettingsOutline, ExitOutline } from 'react-ionicons';
-import logoBranca from "../assets/images/logo_mobili_branca.svg";
+import logoBranca from '../../assets/images/logo_mobili_branca.svg';
 import miniana from '../../assets/images/ANA.png';
 import logout from '../../assets/images/logout.svg';
 import iconePerfil from '../../assets/images/perfil_iconeMenu.svg';
@@ -20,7 +18,10 @@ function Menu_parceiro() {
     return (
         <>
             <aside>
-                <img src={logoBranca} alt="logo Mobili"/>
+                <img
+                    src={logoBranca}
+                    alt="logo Mobili"
+                />
                 <div className="aside_top_perfilParceiro">
                     <h2>Menu</h2>
                     <div className="link_perfilParceiro">
@@ -75,7 +76,7 @@ function Menu_parceiro() {
                     <img src={miniana} alt="" />
                     <div>
                         <div>
-                            <a href="#">Rebeca Flores</a>
+                            <a href="#">Ana Rosa</a>
                             <span>eu@gmail.com</span>
                         </div>
                         <a href="../index.html">
