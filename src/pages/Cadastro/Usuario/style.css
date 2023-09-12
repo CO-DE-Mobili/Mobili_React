@@ -5,6 +5,8 @@
     color: var(--branco);
     justify-content: center;
     height: 100vh;
+    display: flex;
+    
 }
 
 .main-cadastro .image_voltar a {
@@ -57,14 +59,12 @@
     flex-direction: column;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    height: 100%;
-    width: 40%;
+    margin: 100px;
 
 }
 
 .main-cadastro .ilustracao {
-    height: 425px;
+    height: 450px;
 
 }
 
@@ -81,7 +81,7 @@
 }
 
 .main-cadastro .bem_vindo h1 {
-    padding: 0 0 20px;
+    padding: 0 0 15px;
 }
 
 .main-cadastro .dados_usuario form {
@@ -163,6 +163,7 @@
 
 .main-cadastro .conta_cadastro a {
     color: #61D248;
+    text-decoration: none;
 }
 
 .main-cadastro .conta_cadastro {
@@ -213,9 +214,9 @@
 
 
 
-    .main-cadastro .conteudo {
+    /* .main-cadastro .conteudo {
         width: 100%;
-    }
+    } */
 
     .main-cadastro .dados_usuario form {
         width: 100%;

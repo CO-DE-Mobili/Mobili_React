@@ -37,12 +37,7 @@ function RedefinirSenha() {
                                 {" "}
                                 <img src="../geral/img_login/seta.png" alt="" />
                             </Link>
-                            <div>
-                                <Link to={"#"} className="botao_voltar">
-                                    {" "}
-                                    Voltar
-                                </Link>
-                            </div>
+                            
                         </div>
                         <div className="bem_vindo">
                             <span>Bem vindo!</span>

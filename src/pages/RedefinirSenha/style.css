@@ -42,6 +42,7 @@
     height: 100vh;
     justify-content: center;
     gap: 120px;
+    background-color:var(--azul)
 
 }
 
@@ -73,6 +74,8 @@
 
 .redefinir_senha .bem_vindo h1 {
     padding: 0 0 20px;
+    color: var(--branco);
+    font-family: var(--verdana);
 }
 
 .dados_usuario form {
@@ -86,6 +89,8 @@
 .redefinir_senha .dados_usuario form label {
     align-self: flex-start;
     font-size: 20px;
+    color: var(--branco);
+    font-family: var(--verdana);
 }
 
 .redefinir_senha .dados_usuario form>div {

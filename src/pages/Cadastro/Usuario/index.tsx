@@ -86,7 +86,7 @@ function CadastroUsuario() {
                         </div>
                         <div className="conta_cadastro">
                             <span>Já tem uma conta?</span>
-                            <Link to={"#"}>Se logar</Link>
+                            <Link to={"#"}> Se logar</Link>
                         </div>
                     </div>
                 </div>
