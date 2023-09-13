@@ -1,9 +1,9 @@
 import './style.css';
 
 import Menu_parceiro from '../../components/menu_parceiro';
+import { Link } from 'react-router-dom';
 
-
-function Gerenciar_perfil_parceiro() {
+function PerfilAdm_Gerenciamnto() {
 
 
 
@@ -18,12 +18,25 @@ function Gerenciar_perfil_parceiro() {
                         <section className="sessao1_gerenciamento_parceiro">
                             <div className="cabecalho_gerenciamento_parceiro">
                                 <h1>Gerenciamento</h1>
-                                <p>Solicitções</p>
+                                <p>Solicitações</p>
                             </div>
                             <div className="botaoAdd_gerenciamento_parceiro">
                             </div>
                         </section>
                         <section className="sessao2_gerenciamento_parceiro">
+                            < div className="sessao_tabelas_gerenciamento_adm">
+                                <div>
+                                    <Link to={""} style={{color:'#001E50', fontSize: '20px'}}>
+                                        Parceiros
+                                    </Link>
+
+                                </div>
+                                <div>
+                                    <Link to={""}style={{color:'#001E50', fontSize: '20px'}}>
+                                        Propagandas
+                                    </Link>
+                                </div>
+                            </div>
                             <div className="tabelaepesquisa_parceiro">
                                 <div className="box_busca_gerenciamento_parceiro">
                                     <div className="barra_pesquisa_gerenciamento_parceiro">
@@ -157,4 +170,4 @@ function Gerenciar_perfil_parceiro() {
     )
 }
 
-export default Gerenciar_perfil_parceiro;
+export default PerfilAdm_Gerenciamnto;
