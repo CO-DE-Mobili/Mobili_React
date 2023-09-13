@@ -20,6 +20,9 @@
 
 .redefinir_senha .bc {
     text-align: center;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 
@@ -101,12 +104,18 @@
 
 .redefinir_senha .dados_usuario form>div input {
     padding-left: 10px;
+    height: 50px;
+}
+
+.redefinir_senha .dados_usuario form>div #checkbox {
+    height: 12px;
 }
 
 .redefinir_senha .dados_usuario form div.form_checkbox {
     flex-direction: row;
     justify-content: space-between;
     font-size: 19px;
+    display: flex;
 }
 
 .redefinir_senha .logo {
@@ -147,7 +156,8 @@
 }
 
 .redefinir_senha .form_checkbox>div a {
-    align-self: center;
+    /* align-self: center;
+    text-align: start; */
 }
 
 
@@ -159,6 +169,7 @@
     font-family: var(--verdana);
     text-decoration: none;
     font-size: 25px;
+    padding: 10px 160px;
 
 }
 

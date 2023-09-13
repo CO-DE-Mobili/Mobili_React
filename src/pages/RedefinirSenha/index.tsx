@@ -18,7 +18,7 @@ function RedefinirSenha() {
                                 <img src={imgseta} alt="" />
                             </Link>
                             <div>
-                                <Link to={"#"}className="botao_voltar">
+                                <Link to={"#"} className="botao_voltar">
                                     {" "}
                                     Voltar
                                 </Link>
@@ -34,10 +34,10 @@ function RedefinirSenha() {
                     <div className="pagina">
                         <div className="image_voltar_responsivo">
                             <Link to={"#"} className="botao_voltar">
-                                {" "}
+                                {"http://localhost:5173/redefinir/senha"}
                                 <img src="../geral/img_login/seta.png" alt="" />
                             </Link>
-                            
+
                         </div>
                         <div className="bem_vindo">
                             <span>Bem vindo!</span>
@@ -46,17 +46,39 @@ function RedefinirSenha() {
                         <div className="dados_usuario">
                             <form action="">
                                 <div>
-                                    <label htmlFor="nome">Senha</label>
-                                    <input type="nome" id="nome" defaultValue="*****" />
+                                    <label htmlFor="senha">Senha</label>
+                                    <input type="password" id="senha" placeholder="Digite sua senha" />
                                 </div>
                                 <div>
                                     <label htmlFor="email">Confirmar senha</label>
-                                    <input type="email" id="email" defaultValue="*****" />
+                                    <input type="password" id="senha" placeholder="Digite sua senha" />
                                 </div>
-                                <div className="bc">
-                                    <Link className="button_cont" to={"#"}>
-                                        Enviar
-                                    </Link>
+                                <div>
+                                    <div className="form_checkbox">
+                                        <div>
+                                            <input
+                                                type="checkbox"
+                                                name=""
+                                                id="checkbox"
+                                            // onChange={(e) => setCheckboxLogado(e.target.value)}
+                                            />
+                                            <Link to={"#"}>Lembrar de mim</Link>
+                                        </div>
+
+                                        <Link to={"#"}>
+                                            Esqueci minha senha
+                                        </Link>
+                                    </div>
+                                    <div className="bc">
+                                        <Link className="button_cont" to={"#"}>
+                                            Enviar
+                                        </Link>
+
+
+
+
+                                    </div>
+
                                 </div>
                             </form>
                         </div>
