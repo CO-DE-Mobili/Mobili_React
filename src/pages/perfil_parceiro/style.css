@@ -1,0 +1,491 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'VW Head';
+    src: url('./fonts/VWText-Regular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Verdana';
+    src: url('./fonts/verdana.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    /* cor */
+    --azul: #001E50;
+    --verde: #61D248;
+    --cinza: #E7E7E7;
+    --branco: #FFFFFF;
+    --preto: #000000;
+    /*fonte*/
+    --vw: 'VW Head';
+    --verdana: 'Verdana';
+}
+
+
+/* MAIN */
+
+#main_perfil_parceiro body {
+    background-color: var(--branco);
+}
+
+#main_perfil_parceiro main {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+
+/* conteudo_perfilParceiro */
+
+#main_perfil_parceiro .conteudo_perfilParceiro {
+    /* background-color: #001e50; */
+    /* background-color: var(--cinza); */
+    /* background-color: #001e5080; */
+    /* background-color: #001e5060; */
+    /* background-color: #BFC6D3; */
+    /* background-color: #001e5020; */
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 0 5% 5%;
+    width: 80%;
+    margin-left: 369px;
+
+}
+
+#main_perfil_parceiro .conteudo_perfilParceiro img {
+    align-self: stretch;
+    width: 50%;
+}
+
+
+#main_perfil_parceiro .perfil_principal_perfilParceiro img {
+    width: 30%;
+}
+
+#main_perfil_parceiro .perfil_info_perfilParceiro {
+    font-family: var(--verdana);
+    width: 100%;
+    height: fit-content;
+}
+
+#main_perfil_parceiro .perfil_info_perfilParceiro form>div {
+    display: flex;
+}
+
+#main_perfil_parceiro .perfil_info_perfilParceiro form>div>div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: var(--azul);
+}
+
+#main_perfil_parceiro .perfil_principal_perfilParceiro form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 80%;
+}
+
+#main_perfil_parceiro .perfil_principal_perfilParceiro form input {
+    border-radius: 5px;
+    border: 2px solid rgba(203, 210, 220, 0.5);
+    width: 250px;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 15px;
+    height: 40px;
+    background-color: var(--branco);
+}
+
+#main_perfil_parceiro .perfil_principal_perfilParceiro form input:focus {
+    color: var(--azul);
+    outline-color: var(--azul);
+    caret-color: var(--azul);
+    border: 2px solid var(--azul);
+}
+
+#main_perfil_parceiro .form_submit {
+    flex-direction: column;
+    gap: 5px;
+    align-self: flex-start;
+}
+
+#main_perfil_parceiro .form_submit label {
+    align-self: flex-start;
+    color: var(--azul);
+}
+
+#main_perfil_parceiro .perfil_info_perfilParceiro input.submit_button_perfilParceiro {
+    color: orange;
+    border: 2px solid orange;
+    background-color: white;
+    width: 150px;
+    height: 40px;
+    font-family: var(--verdana);
+    font-size: 16px;
+    padding: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#main_perfil_parceiro .perfil_info_perfilParceiro input.submit_button_perfilParceiro:hover {
+    background-color: orange;
+    color: var(--branco);
+    transition: 0.3s;
+}
+
+#main_perfil_parceiro .phone {
+    display: none;
+}
+
+#main_perfil_parceiro .submit_button_perfilParceiro {
+    color: orange;
+    font-family: var(--vw);
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    border-radius: 4px;
+    padding: 9px 33px;
+    border: 1px solid orange;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 15vh;
+    text-align: center;
+}
+
+#main_perfil_parceiro .submit_button_perfilParceiro:hover {
+    background-color: orange;
+    color: var(--branco);
+    transition: 0.3s;
+}
+
+#main_perfil_parceiro .submit_button_perfilParceiro_cancelar {
+    color: #DC2626;
+    font-family: var(--vw);
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    border-radius: 4px;
+    padding: 9px;
+    border: 1px solid #DC2626;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 15vh;
+    text-align: center;
+}
+
+#main_perfil_parceiro .submit_button_perfilParceiro_cancelar:hover {
+    background-color: #DC2626;
+    color: var(--branco);
+    transition: 0.3s;
+}
+
+#main_perfil_parceiro .submit_button_perfilParceiro_salvar {
+    color: var(--verde);
+    font-family: var(--vw);
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    border-radius: 4px;
+    padding: 9px;
+    border: 1px solid var(--verde);
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 15vh;
+    text-align: center;
+}
+
+#main_perfil_parceiro .submit_button_perfilParceiro_salvar:hover {
+    background-color: var(--verde);
+    color: var(--branco);
+    transition: 0.3s;
+}
+
+
+#main_perfil_parceiro #email, #nome {
+    margin-right: 30px;
+}
+
+
+#main_perfil_parceiro .botoes_editar_perfilParceiro {
+
+    width: 100%;
+    justify-content: space-between;
+
+
+}
+
+
+
+/* FIM conteudo_perfilParceiro */
+
+@media screen and (max-width: 1300px) {
+    #main_perfil_parceiro .aside_top_perfilParceiro {
+        margin: 10px 0 120px;
+    }
+
+    #main_perfil_parceiro .perfil_principal_perfilParceiro form input {
+        font-size: 14px;
+    }
+
+    #main_perfil_parceiro .rede_social_perfilParceiro {
+        text-align: center;
+    }
+
+    #main_perfil_parceiro .rede_social_perfilParceiro nav {
+        flex-wrap: wrap;
+    }
+
+    #main_perfil_parceiro .rede_social_perfilParceiro nav>div {
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    #main_perfil_parceiro .perfil_divisoria_perfilParceiro {
+        flex-direction: column;
+        gap: 12px;
+        height: fit-content;
+    }
+
+    #main_perfil_parceiro .perfil_divisoria_perfilParceiro>img {
+        width: 60px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    #main_perfil_parceiro aside div h2 {
+        font-size: 23px;
+    }
+
+    #main_perfil_parceiro .perfil_info_perfilParceiro {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 955px) {
+    #main_perfil_parceiro main {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #main_perfil_parceiro body {
+        background-color: var(--branco);
+    }
+
+    #main_perfil_parceiro aside {
+        display: none;
+    }
+
+    #main_perfil_parceiro .phone {
+        display: initial;
+
+    }
+
+    #main_perfil_parceiro .navigation {
+        width: 100%;
+        height: 90px;
+        background: var(--azul);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: var(--verdana);
+        backdrop-filter: blur(5px);
+        display: flex;
+        transform-origin: top;
+        transition-duration: .25s;
+        transition-timing-function: cubic-bezier(.6, .13, .32, 1.46);
+        margin: 0 auto;
+    }
+
+    #main_perfil_parceiro #input__menu-toggle:checked~.label-for-menu .one {
+        transform-origin: left;
+        transform: translate(15%, -2px) rotate(45deg);
+    }
+
+    #main_perfil_parceiro #input__menu-toggle:checked~.label-for-menu .two {
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    #main_perfil_parceiro #input__menu-toggle:checked~.label-for-menu .three {
+        transform-origin: left;
+        transform: translate(15%, 2px) rotate(-45deg);
+    }
+
+    #main_perfil_parceiro #input__menu-toggle:checked~.navigation ul {
+        transform: scale(1, 1);
+    }
+
+   #main_perfil_parceiro  #main_perfil_parceiro #input__menu-toggle:checked~.phone .navigation {
+        transition-property: opacity;
+        opacity: 1;
+        transition-delay: .2s;
+        transition-duration: .1s;
+    }
+
+    #main_perfil_parceiro .navigation ul {
+        display: flex;
+    }
+
+    #main_perfil_parceiro .navigation ul li {
+        position: relative;
+        list-style: none;
+        width: 70px;
+        height: 70px;
+        z-index: 1;
+    }
+
+    #main_perfil_parceiro .navigation ul li Link {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    #main_perfil_parceiro .navigation ul li Link .icon,
+    #main_perfil_parceiro .close {
+        position: relative;
+        display: block;
+        line-height: 75px;
+        font-size: 1.5em;
+        text-align: center;
+        transition: 0.5s;
+        color: var(--branco);
+    }
+
+    #main_perfil_parceiro .close {
+        margin-right: 30px;
+    }
+
+    #main_perfil_parceiro .perfil_principal_perfilParceiro {
+        justify-content: center;
+        width: 100%;
+    }
+
+    #main_perfil_parceiro .perfil_principal_perfilParceiro img {
+        width: 100px;
+    }
+
+    #main_perfil_parceiro .conteudo_perfilParceiro {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    #main_perfil_parceiro .conteudo_perfilParceiro>img {
+        display: none;
+    }
+
+    #main_perfil_parceiro .perfil_principal_perfilParceiro form input {
+        width: 75vw;
+        height: 56px;
+    }
+
+    #main_perfil_parceiro .perfil_info_perfilParceiro input.submit_button_perfilParceiro {
+        width: 75vw;
+        height: 54px;
+    }
+
+    #main_perfil_parceiro .perfil_principal_perfilParceiro form>div {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        min-width: 200px;
+    }
+
+    #main_perfil_parceiro .perfil_principal_perfilParceiro form>div>div {
+        min-width: 200px;
+    }
+
+    #main_perfil_parceiro .perfil_info_perfilParceiro input.submit_button_perfilParceiro {
+        align-self: center;
+        margin: 0;
+    }
+
+    #main_perfil_parceiro .submit_button_perfilParceiro,
+    #main_perfil_parceiro .submit_button_perfilParceiro_salvar {
+        width: 75vw;
+        height: 56px;
+        padding: 15px 0;
+    }
+
+    #main_perfil_parceiro .submit_button_perfilParceiro_salvar {
+        background-color: var(--verde);
+        color: var(--branco);
+    }
+
+    #main_perfil_parceiro .submit_button_perfilParceiro_cancelar {
+        border: none;
+    }
+
+    #main_perfil_parceiro .submit_button_perfilParceiro_cancelar:hover {
+        background-color: var(--branco);
+        color: #DC2626;
+    }
+
+    #main_perfil_parceiro .botoes_editar_perfilParceiro {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0 auto;
+
+
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    #main_perfil_parceiro .conteudo_perfilParceiro {
+        padding: 0;
+        height: 100%;
+        width: 87%;
+    }
+
+    #main_perfil_parceiro .perfil_principal_perfilParceiro {
+        height: fit-content;
+        padding: 10px 0 90px;
+        margin-top: 1%;
+    }
+
+    #main_perfil_parceiro .perfil_principal_perfilParceiro form>div {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        min-width: 200px;
+    }
+
+    #main_perfil_parceiro .perfil_principal_perfilParceiro form>div>div {
+        width: 100%;
+    }
+
+    #main_perfil_parceiro .perfil_principal_perfilParceiro img {
+        width: 75px;
+    }
+
+    #main_perfil_parceiro .perfil_info_perfilParceiro input.submit_button_perfilParceiro {
+        align-self: center;
+        margin: 0;
+    }
+}

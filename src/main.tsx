@@ -14,6 +14,11 @@ import Login from './pages/Login'
 import Home from "./pages/Home";
 import Suporte from './pages/Suporte'
 
+import Perfil_parceiro from './pages/Perfil_Parceiro';
+import Editar_perfil_parceiro from './pages/PerfilParceiro_Editar';
+import Propaganda_PerfilParceiro from './pages/Propaganda_PerfilParceiro';
+import Gerenciar_perfil_parceiro from './pages/PerfilParceiro_Gerenciar'
+
 //componentes
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
@@ -31,6 +36,10 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 
 				<Route path='/' element={<Home />} /> {/*Indica o caminho do componente e o nome da rota dele*/}
 				<Route path='/login' element={<Login />} />
+
+        {/* Perfil */}
+        <Route path='/perfil_parceiro/gerenciamento' element={<Gerenciar_perfil_parceiro />} />
+        <Route path='/perfil_parceiro/propaganda' element={<Propaganda_PerfilParceiro/>}/>
 			</Routes>
 		</BrowserRouter>
 	</React.StrictMode>,
