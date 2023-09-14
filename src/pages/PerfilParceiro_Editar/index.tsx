@@ -4,7 +4,7 @@ import fotoPerfilUsuario from '../../assets/images/REBECA.png';
 
 // componente
 
-import Menu_parceiro from '../../components/menu_parceiro';
+import Menu_parceiro from '../../components/Menu_Aside';
 
 import '../perfil_parceiro/style.css';
 

@@ -1,12 +1,9 @@
 import './style.css';
 
-import Menu_parceiro from '../../components/menu_parceiro';
+import Menu_parceiro from '../../components/Menu_Aside';
 
 
 function Gerenciar_perfil_parceiro() {
-
-
-
     return (
         <>
             <body>

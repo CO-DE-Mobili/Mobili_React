@@ -1,7 +1,7 @@
 import "./style.css"
 import { IonIcon } from '@ionic/react';
 import { arrowRedoCircleOutline } from 'ionicons/icons';
-import Menu_parceiro from "../../components/menu_parceiro";
+import Menu_parceiro from "../../components/Menu_Aside";
 import { defaultMethod } from "react-router-dom/dist/dom";
 import propaganda_perfil from "../../assets/images/propaganda.svg"
 

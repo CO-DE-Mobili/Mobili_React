@@ -8,10 +8,11 @@ import iconePerfil from '../../assets/images/perfil_iconeMenu.svg';
 import iconeGerenciamento from '../../assets/images/gerenciamento_iconeMenu.svg';
 import iconeFacebook_perfil from '../../assets/images/facebook_perfil.svg';
 import iconeTwitter_perfil from '../../assets/images/twitter_perfil.svg';
-import iconeLinkedin_perfil from '../../assets/images/linkedin_perfil.svg';
-import iconeInstagram_perfil from '../../assets/images/instagram_perfil.svg';
+import iconeLinkedin_perfil from '../../assets/images/icon_linkedin.svg';
+import a from "../../assets/images/lupa.svg";
 
-import '../../pages/perfil_parceiro/style.css'
+
+import './style.css'
 
 
 import { Link } from 'react-router-dom';
@@ -67,7 +68,7 @@ function Menu_parceiro() {
                             </Link>
                             <Link to={""}>
                                 <img
-                                    src={iconeInstagram_perfil}
+                                    // src={iconeInstagram_perfil}
                                     alt=""
                                 />
                             </Link>

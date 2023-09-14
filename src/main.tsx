@@ -5,12 +5,12 @@ import './index.css'
 
 //paginas
 
-import Perfil_parceiro from './pages/perfil_parceiro';
+import Perfil_parceiro from './pages/Perfil_Parceiro';
 
-import Editar_perfil_parceiro from './pages/editar_perfilParceiro';
+import Editar_perfil_parceiro from './pages/PerfilParceiro_Editar';
 
 
-import Gerenciar_perfil_parceiro from './pages/gerenciar_perfilParceiro';
+import Gerenciar_perfil_parceiro from './pages/PerfilParceiro_Gerenciar';
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Propaganda_PerfilParceiro from './pages/Propaganda_PerfilParceiro';
