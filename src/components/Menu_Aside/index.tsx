@@ -9,7 +9,6 @@ import iconeGerenciamento from '../../assets/images/gerenciamento_iconeMenu.svg'
 import iconeFacebook_perfil from '../../assets/images/facebook_perfil.svg';
 import iconeTwitter_perfil from '../../assets/images/twitter_perfil.svg';
 import iconeLinkedin_perfil from '../../assets/images/icon_linkedin.svg';
-import a from "../../assets/images/lupa.svg";
 
 
 import './style.css'
