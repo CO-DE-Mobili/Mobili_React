@@ -34,7 +34,7 @@ function RedefinirSenha() {
                     <div className="pagina">
                         <div className="image_voltar_responsivo">
                             <Link to={"#"} className="botao_voltar">
-                                {"http://localhost:5173/redefinir/senha"}
+                                {""}
                                 <img src="../geral/img_login/seta.png" alt="" />
                             </Link>
 

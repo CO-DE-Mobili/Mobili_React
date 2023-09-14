@@ -155,6 +155,13 @@
 
 }
 
+.button_esqueceusenha{
+    color: var(--branco);
+    display: flex;
+    justify-content:center;
+    
+}
+
 .main-cadastro .button_cont:hover {
     background-color: var(--verde);
     color: var(--azul);
@@ -209,6 +216,8 @@
 .main-cadastro .image_voltar_responsivo{
     display: none;
 }
+
+
 
 @media screen and (max-width:1000px) {
 

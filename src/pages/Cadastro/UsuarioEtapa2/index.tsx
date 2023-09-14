@@ -13,12 +13,12 @@ function UsuarioEtapa2() {
             <div className="conteudo">
                 <div className="alinhamento_imagens">
                 <div className="image_voltar">
-                    <Link to={"#"} className="botao_voltar">
+                    <Link to={"../cadastro/usuario"} className="botao_voltar">
                     {" "}
                     <img src={seta} alt="" />
                     </Link>
                     <div>
-                    <Link to={"#"} className="botao_voltar">
+                    <Link to={"../cadastro/usuario"} className="botao_voltar">
                         {" "}
                         Voltar
                     </Link>
@@ -47,11 +47,11 @@ function UsuarioEtapa2() {
                     <form action="">
                     <div>
                         <label htmlFor="nome">Senha</label>
-                        <input type="nome" id="nome" defaultValue="******" />
+                        <input type="password" id="senha" placeholder="Digite sua senha" />
                     </div>
                     <div>
-                        <label htmlFor="email">Confirmar senha</label>
-                        <input type="email" id="email" defaultValue="******" />
+                        <label htmlFor="senha">Confirmar senha</label>
+                        <input type="password" id="senha" placeholder="Digite sua senha"/>
                     </div>
                     <div className="bc">
                         <Link
