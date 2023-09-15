@@ -44,9 +44,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 
 				{/* Perfil */}
 				<Route path='/perfil_parceiro/gerenciamento' element={<Gerenciar_perfil_parceiro />} />
-				{/* <Route path='/perfil_parceiro/propaganda' element={<Propaganda_PerfilParceiro/>}/>
+				<Route path='/perfil_parceiro/propaganda' element={<Propaganda_PerfilParceiro/>}/>
 				<Route path='/perfil_parceiro/editar' element={<Editar_perfil_parceiro/>}/>
-				<Route path='/perfil_parceiro/' element={<Perfil_parceiro/>}/> */}
+				<Route path='/perfil_parceiro/' element={<Perfil_parceiro/>}/>
 			</Routes>
 		</BrowserRouter>
 	</React.StrictMode>,
