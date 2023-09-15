@@ -30,7 +30,7 @@ function CadastroUsuario() {
                 <div className="conteudo">
                     <div className="alinhamento_imagens">
                         <div className="image_voltar">
-                            <Link to={"#"} className="botao_voltar">
+                            <Link to={"/"} className="botao_voltar">
                                 {" "}
                                 <img src={seta} alt="" />
                             </Link>
@@ -67,18 +67,18 @@ function CadastroUsuario() {
                                     <label htmlFor="nome">Nome completo</label>
                                     <input type="nome"
                                     // onChange={(e) => setNome(e.target.value)}
-                                    id="nome" defaultValue="Maria Joana da Silva" />
+                                    id="nome" placeholder="Maria Joana da Silva" />
                                 </div>
                                 <div>
                                     <label htmlFor="email">E-mail</label>
-                                    <input type="email" id="email" defaultValue="anamaria@yahoo.com" />
+                                    <input type="email" id="email" placeholder="anamaria@yahoo.com" />
                                 </div>
                                 <div>
                                     <label htmlFor="telefone">Telefone</label>
-                                    <input type="'telefone" id="email" defaultValue="(11)5698-8974" />
+                                    <input type="'telefone" id="email" placeholder="(11)5698-8974" />
                                 </div>
                                 <div className="bc">
-                                    <Link className="button_cont" to={"#"}>
+                                    <Link className="button_cont" to={"../cadastro/usuario/etapa2"}>
                                         Continuar
                                     </Link>
                                 </div>
@@ -86,8 +86,8 @@ function CadastroUsuario() {
                         </div>
                         <div className="conta_cadastro">
                             <span>Já tem uma conta?</span>
-                            <Link to={"#"}> Se logar</Link>
-                        </div>
+                            <Link to={"#"}> Se logar</Link></div>
+                                <a className="button_esqueceusenha" href="">Esqueceu a senha ?</a>
                     </div>
                 </div>
             </main>
