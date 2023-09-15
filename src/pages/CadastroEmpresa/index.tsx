@@ -1,6 +1,7 @@
 import "./style.css"
 import { Link } from "react-router-dom";
 import Select from 'react-select'
+import Menu_parceiro from "../../components/Menu_Aside";
 
 const categorias = [
   { value: 'restaurante', label: 'Restaurante' },
@@ -19,6 +20,7 @@ function CadastroEmpresa() {
 	return (
 		<>
 			<main className="main-cadastro_empresa">
+				<Menu_parceiro />
 				<section className="container">
 					<h1>Cadastro de Empresa</h1>
 					<div className="formulario">
@@ -132,9 +134,7 @@ function CadastroEmpresa() {
 								/>
 							</div>
 							<div className="botao_submit">
-								<a className="confirmar">
-									Confirmar
-								</a>
+								<input type={"submit"} className="confirmar"/>
 							</div>
 						</form>
 					</div>

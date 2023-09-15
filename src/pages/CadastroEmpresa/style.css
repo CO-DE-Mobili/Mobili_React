@@ -1,17 +1,18 @@
 .main-cadastro_empresa{
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	justify-content: space-around;
 }
 
 .main-cadastro_empresa .container{
 	background-color: white;
-	width: 70%;
-	padding: 20px;
+	width: 60%;
+	padding: 40px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+	margin: 40px 0 40px 0;
+	border-radius: 10px;
 }
 
 .main-cadastro_empresa .nome{
@@ -65,6 +66,13 @@
     height: 40px;
 }
 
+.main-cadastro_empresa form>div input:focus {
+    color: var(--azul);
+    outline-color: var(--azul);
+    caret-color: var(--azul);
+    border: 2px solid var(--azul);
+}
+
 .main-cadastro_empresa form>div label {
 	font-size: 20px;
 }
@@ -78,6 +86,20 @@
 	height: 50px;
 }
 
-.main-cadastro_empresa .botao_submit {
-	
+.main-cadastro_empresa .confirmar {
+	text-decoration: none;
+	font-size: var(--vw);
+	font-size: 21px;
+	border: 3px solid var(--verde);
+	padding: 10px 15px;
+	border-radius: 10px;
+	color: var(--azul);
+	height: 50px;
+	width: 50%;
+	background-color: white;
 }
+
+.main-cadastro_empresa .confirmar:hover {
+	background-color: var(--verde);
+}
+
