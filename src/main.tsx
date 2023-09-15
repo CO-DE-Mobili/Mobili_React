@@ -13,6 +13,12 @@ import Privacidade from "./pages/Privacidade";
 import QuemSomos from './pages/QuemSomos';
 import Login from './pages/Login'
 import Home from "./pages/Home";
+import Suporte from './pages/Suporte'
+
+import Perfil_parceiro from './pages/Perfil_Parceiro';
+import Editar_perfil_parceiro from './pages/PerfilParceiro_Editar';
+import Propaganda_PerfilParceiro from './pages/Propaganda_PerfilParceiro';
+import Gerenciar_perfil_parceiro from './pages/PerfilParceiro_Gerenciar'
 
 //componentes
 
@@ -24,6 +30,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 				<Route path="/cadastro/usuario" element={<CadastroUsuario/>}/>
 				<Route path="/cadastro/usuario/etapa2"element={<UsuarioEtapa2/>}/>
 				<Route path="/redefinir/senha"element={<RedefinirSenha/>}/>
+				<Route path='/suporte'element={<Suporte/>}/>
 
 				<Route path='/quem_somos' element={<QuemSomos/>}/>
 				<Route path='/privacidade' element={<Privacidade/>}/>
@@ -31,6 +38,10 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 
 				<Route path='/' element={<Home />} /> {/*Indica o caminho do componente e o nome da rota dele*/}
 				<Route path='/login' element={<Login />} />
+
+        {/* Perfil */}
+        <Route path='/perfil_parceiro/gerenciamento' element={<Gerenciar_perfil_parceiro />} />
+        <Route path='/perfil_parceiro/propaganda' element={<Propaganda_PerfilParceiro/>}/>
 			</Routes>
 		</BrowserRouter>
 	</React.StrictMode>,
