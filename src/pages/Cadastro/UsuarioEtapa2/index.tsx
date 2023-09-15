@@ -65,7 +65,7 @@ function UsuarioEtapa2() {
                 </div>
                 <div className="conta_cadastro">
                     {/* <span href="">Já tem uma conta?</span> */}
-                    <Link to={"#"}>Já tem uma conta? <span> Se logar</span></Link>
+                    <Link to={"../login"}>Já tem uma conta? <span> Se logar</span></Link>
                 </div>
                 </div>
             </div>
