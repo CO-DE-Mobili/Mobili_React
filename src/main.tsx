@@ -42,7 +42,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 				{/* Gerais */}
 				<Route path='/quem_somos' element={<QuemSomos/>}/>
 				<Route path='/privacidade' element={<Privacidade/>}/>
-				<Route path='/contato' element={<Contato />} />
+				{/* <Route path='/contato' element={<Contato />} /> */}
 
 				{/* Perfil */}
 				<Route path='/perfil_parceiro/gerenciamento' element={<Gerenciar_perfil_parceiro />} />
