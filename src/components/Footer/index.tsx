@@ -17,15 +17,15 @@ function Footer() {
                         <img className="logo_footer" src={imgLogoII} alt="" />
                         <div className="redes_sociais">
                             <nav>
-                                <a href="">
+                                <Link to="https://pt-br.facebook.com/">
                                     {" "}
                                     <img src={imgFacebook} alt="" />{" "}
-                                </a>
-                                <a href="#">
+                                </Link>
+                                <Link to="">
                                     {" "}
                                     <img src={imgTwitter} alt="" />{" "}
-                                </a>
-                                <a href="#">
+                                </Link>
+                                <Link to="#">
                                     {" "}
                                     <img src={imgLinkedin} alt="" />{" "}
                                 </a>
@@ -53,8 +53,12 @@ function Footer() {
                                 <Link to="/suporte">
                                     <li>Suporte</li>
                                 </Link>
-                                <li>Login</li>
+                                <Link to="/login">
+                                    <li>Login</li>
+                                </Link>
+                                <Link to="/cadastro/usuario">
                                 <li>Cadastro</li>
+                                </Link>
                             </ul>
                         </nav>
                         <div className="news">
