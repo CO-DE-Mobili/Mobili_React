@@ -2,9 +2,10 @@ import './index.css'
 
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes  } from "react-router-dom";
 
 //Pages
+import Contato from "./pages/Contato/";
 import CadastroUsuario from './pages/Cadastro/Usuario'
 import UsuarioEtapa2 from './pages/Cadastro/UsuarioEtapa2'
 import RedefinirSenha from "./pages/RedefinirSenha";
@@ -41,12 +42,13 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 				{/* Gerais */}
 				<Route path='/quem_somos' element={<QuemSomos/>}/>
 				<Route path='/privacidade' element={<Privacidade/>}/>
+				<Route path='/contato' element={<Contato />} />
 
 				{/* Perfil */}
 				<Route path='/perfil_parceiro/gerenciamento' element={<Gerenciar_perfil_parceiro />} />
-				{/* <Route path='/perfil_parceiro/propaganda' element={<Propaganda_PerfilParceiro/>}/>
+				<Route path='/perfil_parceiro/propaganda' element={<Propaganda_PerfilParceiro/>}/>
 				<Route path='/perfil_parceiro/editar' element={<Editar_perfil_parceiro/>}/>
-				<Route path='/perfil_parceiro/' element={<Perfil_parceiro/>}/> */}
+				<Route path='/perfil_parceiro/' element={<Perfil_parceiro/>}/>
 			</Routes>
 		</BrowserRouter>
 	</React.StrictMode>,

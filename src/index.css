@@ -36,13 +36,8 @@
 
 }
 
-body {
-    background-color: #E8E9EB;
-
-}
-
-.posicionamento{
+.posicionamento {
   width: 90%;
   max-width: 1100px;
-  margin: 0 auto;
+  margin: auto 0;
 }
