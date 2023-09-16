@@ -74,7 +74,7 @@ function home() {
               sozinho. Torne-se um parceiro da Volkswagen agora e deixe-nos ajudá-lo
               a alcançar seus objetivos de negócios!
             </p>
-            <Link to="/quem_somos/quem_somos.html">Quem somos</Link>
+            <Link to="/quem_somos">Quem somos</Link>
           </div>
           <div className="ilustra_banner">
             <img src={imgIlustra2} />

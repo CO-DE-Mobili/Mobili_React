@@ -28,7 +28,7 @@ function Login() {
                 <div className="conteudo ">
                     <div className="alinhamento_imagens">
                         <div className="image_voltar">
-                            <Link to= {"#"} className="botao_voltar">
+                            <Link to= {"/"} className="botao_voltar">
                                 {" "}
                                 <img src={imgSeta}/>
 
@@ -91,9 +91,9 @@ function Login() {
                                     </Link>
                                 </div>
                                 <div className="bc">
-                                    <a className="button_cont" href="../home mobili/pagina_home.html">
+                                    <Link className="button_cont" to={"#"}>
                                         Enviar
-                                    </a>
+                                    </Link>
                                 </div>
                             </form>
                         </div>

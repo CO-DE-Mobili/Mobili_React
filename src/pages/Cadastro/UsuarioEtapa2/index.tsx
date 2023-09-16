@@ -13,12 +13,12 @@ function UsuarioEtapa2() {
             <div className="conteudo">
                 <div className="alinhamento_imagens">
                 <div className="image_voltar">
-                    <Link to={"../cadastro/usuario"} className="botao_voltar">
+                    <Link to={"/"} className="botao_voltar">
                     {" "}
                     <img src={seta} alt="" />
                     </Link>
                     <div>
-                    <Link to={"../cadastro/usuario"} className="botao_voltar">
+                    <Link to={"./"} className="botao_voltar">
                         {" "}
                         Voltar
                     </Link>
@@ -56,7 +56,7 @@ function UsuarioEtapa2() {
                     <div className="bc">
                         <Link
                         className="button_cont"
-                       to={"#"}
+                       to={"/perfil_parceiro/gerenciamento"}
                         >
                         Finalizar
                         </Link>
@@ -65,7 +65,7 @@ function UsuarioEtapa2() {
                 </div>
                 <div className="conta_cadastro">
                     {/* <span href="">Já tem uma conta?</span> */}
-                    <Link to={"../login"}>Já tem uma conta? <span> Se logar</span></Link>
+                    <Link to={"/login"}>Já tem uma conta? <span> Se logar</span></Link>
                 </div>
                 </div>
             </div>
