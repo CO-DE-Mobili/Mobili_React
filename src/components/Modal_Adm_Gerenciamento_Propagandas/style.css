@@ -1,0 +1,182 @@
+.conteudo_perfilParceiro {
+    /* background-color: #001e50; */
+    /* background-color: var(--cinza); */
+    /* background-color: #001e5080; */
+    /* background-color: #001e5060; */
+    /* background-color: #BFC6D3; */
+    /* background-color: #001e5020; */
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 0 5% 5%;
+    width: 80%;
+    margin-left: 369px;
+
+}
+
+.conteudo_perfilParceiro img {
+    align-self: stretch;
+    width: 50%;
+}
+
+
+.perfil_principal_perfilParceiro img {
+    width: 30%;
+}
+
+.perfil_info_perfilParceiro {
+    font-family: var(--verdana);
+    width: 100%;
+    height: fit-content;
+}
+
+.perfil_info_perfilParceiro form>div {
+    display: flex;
+}
+
+.perfil_info_perfilParceiro form>div>div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: var(--azul);
+}
+
+.perfil_principal_perfilParceiro form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 80%;
+}
+
+.perfil_principal_perfilParceiro form input {
+    border-radius: 5px;
+    border: 2px solid rgba(203, 210, 220, 0.5);
+    width: 250px;
+    height: 30px;
+    padding-left: 10px;
+    font-size: 15px;
+    height: 40px;
+    background-color: var(--branco);
+}
+
+.perfil_principal_perfilParceiro form input:focus {
+    color: var(--azul);
+    outline-color: var(--azul);
+    caret-color: var(--azul);
+    border: 2px solid var(--azul);
+}
+
+.form_submit {
+    flex-direction: column;
+    gap: 5px;
+    align-self: flex-start;
+}
+
+.form_submit label {
+    align-self: flex-start;
+    color: var(--azul);
+}
+
+.perfil_info_perfilParceiro input.submit_button_perfilParceiro {
+    color: orange;
+    border: 2px solid orange;
+    background-color: white;
+    width: 150px;
+    height: 40px;
+    font-family: var(--verdana);
+    font-size: 16px;
+    padding: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.perfil_info_perfilParceiro input.submit_button_perfilParceiro:hover {
+    background-color: orange;
+    color: var(--branco);
+    transition: 0.3s;
+}
+
+.phone {
+    display: none;
+}
+
+.submit_button_perfilParceiro {
+    color: orange;
+    font-family: var(--vw);
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    border-radius: 4px;
+    padding: 9px 33px;
+    border: 1px solid orange;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 15vh;
+    text-align: center;
+}
+
+.submit_button_perfilParceiro:hover {
+    background-color: orange;
+    color: var(--branco);
+    transition: 0.3s;
+}
+
+.submit_button_perfilParceiro_cancelar {
+    color: #DC2626;
+    font-family: var(--vw);
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    border-radius: 4px;
+    padding: 9px;
+    border: 1px solid #DC2626;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 15vh;
+    text-align: center;
+}
+
+.submit_button_perfilParceiro_cancelar:hover {
+    background-color: #DC2626;
+    color: var(--branco);
+    transition: 0.3s;
+}
+
+.submit_button_perfilParceiro_salvar {
+    color: var(--verde);
+    font-family: var(--vw);
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    border-radius: 4px;
+    padding: 9px;
+    border: 1px solid var(--verde);
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 15vh;
+    text-align: center;
+}
+
+.submit_button_perfilParceiro_salvar:hover {
+    background-color: var(--verde);
+    color: var(--branco);
+    transition: 0.3s;
+}
+
+
+#email, #nome {
+    margin-right: 30px;
+}
+
+
+.botoes_editar_perfilParceiro {
+
+    width: 100%;
+    justify-content: space-between;
+
+
+}

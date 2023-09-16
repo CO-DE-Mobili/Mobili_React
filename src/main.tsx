@@ -1,28 +1,44 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
 import './index.css'
 
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
-//paginas
+//Pages
+// import CadastroUsuario from './pages/Cadastro/Usuario'
+// import UsuarioEtapa2 from './pages/Cadastro/UsuarioEtapa2'
+// import RedefinirSenha from "./pages/RedefinirSenha";
+// import Privacidade from "./pages/Privacidade";
+// import QuemSomos from './pages/QuemSomos';
+// import Login from './pages/Login'
+// import Home from "./pages/Home";
+import Suporte from './pages/Suporte'
 
-import Perfil_parceiro from './pages/perfil_parceiro';
+//componentes
+import ModalPropaganda from './components/Modal_Adm_Gerenciamento_Propagandas'
+import ModalParceiro from './components/Modal_Adm_Gerenciamento_Propagandas'
 
-import Editar_perfil_parceiro from './pages/editar_perfilParceiro';
-
-
-import PerfilAdm_Gerenciamnto from './pages/PerfilAdm_Gerenciamento';
-
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Propaganda_PerfilParceiro from './pages/PerfilAdm_Gerenciamento';
 
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <BrowserRouter>
-    <Routes>
-    <Route path='/perfil/adm/gerenciamento' element={<PerfilAdm_Gerenciamnto />} />
-    <Route path='propaganda/perfilparceiro' element={<Perfil_parceiro/>}/>
-    </Routes>
-    </BrowserRouter>
-  </React.StrictMode>
+	<React.StrictMode>
+		<BrowserRouter>
+			<Routes> {/*Indica uma lista de rotas*/}
+				{/* Cadastro */}
+				{/* <Route path="/cadastro/usuario" element={<CadastroUsuario/>}/> */}
+				{/* <Route path="/cadastro/usuario/etapa2"element={<UsuarioEtapa2/>}/> */}
+				{/* <Route path="/redefinir/senha"element={<RedefinirSenha/>}/> */}
+				<Route path="/components/Modal"element={<ModalPropaganda/>}/>
+				<Route path="/components/Modal/Parceiro"element={<ModalParceiro/>}/>
+
+				 
+
+				{/* <Route path='/quem_somos' element={<QuemSomos/>}/> */}
+				{/* <Route path='/privacidade' element={<Privacidade/>}/> */}
+
+				{/* <Route path='/' element={<Home />} />  */}
+				{/* <Route path='/login' element={<Login />} /> */}
+			</Routes>
+		</BrowserRouter>
+	</React.StrictMode>,
 )
