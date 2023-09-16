@@ -28,7 +28,7 @@ function Footer() {
                                 <Link to="#">
                                     {" "}
                                     <img src={imgLinkedin} alt="" />{" "}
-                                </a>
+                                </Link>
                                 <a href="#">
                                     {" "}
                                     <img src={imgInstagram} alt="" />{" "}
