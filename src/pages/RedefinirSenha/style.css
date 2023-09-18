@@ -1,0 +1,246 @@
+
+
+/* body {
+    background-color: var(--azul);
+    color: var(--branco);
+    justify-content: center;
+} */
+
+.redefinir_senha .image_voltar {
+    display: flex;
+    align-self: flex-start;
+}
+
+.redefinir_senha .conteudo {
+
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.redefinir_senha .bc {
+    text-align: center;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+.redefinir_senha .image_voltar a {
+    text-decoration: none;
+    font-family: var(--vw);
+    color: var(--verde);
+    font-size: 30px;
+}
+
+.redefinir_senha  a {
+    color: var(--branco);
+    justify-content: center;
+
+}
+
+.redefinir_senha  {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    gap: 120px;
+    background-color:var(--azul)
+
+}
+
+.redefinir_senha .alinhamento_imagens {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 40%;
+
+}
+
+.redefinir_senha .ilustracao {
+    height: 475px;
+}
+
+.redefinir_senha .bem_vindo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.redefinir_senha .bem_vindo span {
+    color: #61D248;
+    align-self: flex-start;
+}
+
+.redefinir_senha .bem_vindo h1 {
+    padding: 0 0 20px;
+    color: var(--branco);
+    font-family: var(--verdana);
+}
+
+.dados_usuario form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 25px;
+
+}
+
+.redefinir_senha .dados_usuario form label {
+    align-self: flex-start;
+    font-size: 20px;
+    color: var(--branco);
+    font-family: var(--verdana);
+}
+
+.redefinir_senha .dados_usuario form>div {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.redefinir_senha .dados_usuario form>div input {
+    padding-left: 10px;
+    height: 50px;
+}
+
+.redefinir_senha .dados_usuario form>div #checkbox {
+    height: 12px;
+}
+
+.redefinir_senha .dados_usuario form div.form_checkbox {
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 19px;
+    display: flex;
+}
+
+.redefinir_senha .logo {
+    width: 300px;
+    margin: 20px;
+
+}
+
+.redefinir_senha .pagina {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--verdana);
+
+}
+
+.redefinir_senha .dados_usuario input {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid rgba(203, 210, 220, 0.5);
+    border-radius: 4px;
+    height: 36px;
+    font-family: var(--verdana);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13.5px;
+    line-height: 39px;
+    letter-spacing: -0.01em;
+    color: var(--branco);
+    background-color: var(--azul);
+}
+
+.redefinir_senha .form_checkbox>div {
+    display: flex;
+    gap: 10px;
+}
+
+.redefinir_senha .form_checkbox>div a {
+    /* align-self: center;
+    text-align: start; */
+}
+
+
+.redefinir_senha .button_cont {
+    border: 2px solid #61D248;
+    border-radius: 4px;
+    color: #61D248;
+    padding: 10px;
+    font-family: var(--verdana);
+    text-decoration: none;
+    font-size: 25px;
+    padding: 10px 160px;
+
+}
+
+.redefinir_senha .conta_cadastro a {
+    color: #61D248;
+}
+
+.redefinir_senha .conta_cadastro {
+    align-self: center;
+    margin-top: 10px;
+    font-size: 18px;
+
+}
+
+.redefinir_senha .form_checkbox a {
+    gap: 15px;
+    align-self: center;
+
+}
+
+@media screen and (max-width:1000px) {
+    .redefinir_senha .alinhamento_imagens {
+        display: none;
+    }
+
+    .redefinir_senha .bem_vindo span {
+        color: #61D248;
+        width: 280px;
+
+    }
+    
+    .redefinir_senha .image_voltar_responsivo{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .redefinir_senha .alinhamento_imagens {
+        display: none;
+    }
+
+    .redefinir_senha .bem_vindo span {
+        color: #61D248;
+        width: 280px;
+        text-align: center;
+    }
+
+    .redefinir_senha .dados_usuario form {
+        width: 85%;
+
+    }
+}
+
+.redefinir_senha .dados_usuario form div.form_checkbox {
+    font-size: 16px;
+}
+
+.redefinir_senha .dados_usuario {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.redefinir_senha .conta_cadastro{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.redefinir_senha .bem_vindo h1{
+    text-align: center;
+}
+ 

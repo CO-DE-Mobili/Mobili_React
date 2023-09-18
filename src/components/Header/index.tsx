@@ -48,22 +48,22 @@ function Header() {
                         <div className="main-nav-list" id="recursos">
                             <ul>
                                 <li>
-                                    <Link to={"#"}>Home</Link>
+                                    <Link to={"/"}>Home</Link>
                                 </li>
                                 <li>
-                                    <Link to={"#"}>Quem somos</Link>
+                                    <Link to="/quem_somos">Quem somos</Link>
                                 </li>
                                 <li>
                                     <Link to={"#"}>Contato</Link>
                                 </li>
                                 <li>
-                                    <Link to={"#"}>Suporte</Link>
+                                    <Link to={"/suporte"}>Suporte</Link>
                                 </li>
                                 <div className="botoes_header_2">
                                     <Link className="login" to={"#"}>Login</Link>
 
 
-                                    <Link className="cadastro" to={"#"}>Cadastro</Link>
+                                    <Link className="cadastro" to="/cadastro/usuario">Cadastro</Link>
 
                                 </div>
                             </ul>
@@ -71,9 +71,9 @@ function Header() {
                     </nav>
                 </div>
                 <div className="botoes_header">
-                    <Link className="login" to={"#"}>Login</Link>
+                    <Link className="login" to={"/login"}>Login</Link>
 
-                    <Link className="cadastro" to={"#"}>Cadastro</Link>
+                    <Link className="cadastro" to="/cadastro/usuario">Cadastro</Link>
                 </div>
             </div>
         </header>

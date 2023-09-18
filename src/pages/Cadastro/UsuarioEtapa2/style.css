@@ -1,0 +1,304 @@
+.main-cadastro-etapa2 {
+    background-color: var(--azul);
+    color: var(--branco);
+    justify-content: center;
+}
+
+.main-cadastro-etapa2 .image_voltar a {
+    padding-left: 20px;
+}
+
+.main-cadastro-etapa2 .image_voltar {
+    display: flex;
+    align-self: flex-start;
+}
+
+.main-cadastro-etapa2 .conteudo {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-cadastro-etapa2 .bc {
+    text-align: center;
+}
+
+.main-cadastro-etapa2 .image_voltar a {
+    text-decoration: none;
+    font-family: var(--vw);
+    color: var(--verde);
+    font-size: 30px;
+}
+
+.main-cadastro-etapa2  a {
+    color: var(--branco);
+    justify-content: center;
+}
+
+.main-cadastro-etapa2  {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    gap: 120px;
+}
+
+.main-cadastro-etapa2 .alinhamento_imagens {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 40%;
+}
+
+.main-cadastro-etapa2 .ilustracao {
+    height: 475px;
+}
+
+.main-cadastro-etapa2 .bem_vindo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-cadastro-etapa2 .bem_vindo span {
+    color: #61D248;
+    align-self: flex-start;
+}
+
+.main-cadastro-etapa2 .bem_vindo h1 {
+    padding: 0 0 20px;
+}
+
+.main-cadastro-etapa2 .dados_usuario form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 20px;
+}
+
+.main-cadastro-etapa2 .dados_usuario form label {
+    align-self: flex-start;
+    font-size: 20px;
+}
+
+.main-cadastro-etapa2 .dados_usuario form>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-cadastro-etapa2 .dados_usuario form>div input {
+    padding-left: 10px;
+}
+
+.main-cadastro-etapa2 .dados_usuario form div.form_checkbox {
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 19px;
+}
+
+.main-cadastro-etapa2 .logo {
+    width: 300px;
+    margin: 20px;
+}
+
+.main-cadastro-etapa2 .pagina {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--verdana);
+}
+
+.main-cadastro-etapa2 .dados_usuario input {
+    height: 30px;
+}
+
+.main-cadastro-etapa2 .form_checkbox>div {
+    display: flex;
+    gap: 10px;
+}
+
+.main-cadastro-etapa2 .form_checkbox>div a {
+    align-self: center;
+    text-decoration: none;
+}
+
+.main-cadastro-etapa2 .button_cont {
+    border: 2px solid #61D248;
+    border-radius: 4px;
+    color: #61D248;
+    padding: 10px;
+    font-family: var(--verdana);
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.main-cadastro-etapa2 .etapa2_cadastro {
+    width: 100%;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.main-cadastro-etapa2 .etapa2_cadastro .voltar_btn {
+    border: 2px solid rgba(203, 210, 220, 0.5);
+    color: rgba(203, 210, 220, 0.5);
+    transition: 0.3s;
+}
+
+.main-cadastro-etapa2 .etapa2_cadastro .voltar_btn:hover {
+    background-color: rgba(203, 210, 220, 0.5);
+    color: var(--azul);
+    transition: 0.3s;
+}
+
+.main-cadastro-etapa2 .etapa2_cadastro a {
+    border: 2px solid #61D248;
+    border-radius: 4px;
+    color: #61D248;
+    padding: 10px;
+    font-family: var(--verdana);
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+    width: 40%;
+    text-align: center;
+}
+
+
+
+.main-cadastro-etapa2 .button_cont:hover,
+.main-cadastro-etapa2 .etapa2_cadastro a:hover {
+    background-color: var(--verde);
+    color: var(--azul);
+    transition: 0.3s;
+}
+
+.main-cadastro-etapa2 .conta_cadastro a {
+    color: var(--branco);
+    text-decoration: none;
+    margin: 15px;
+}
+
+.main-cadastro-etapa2 .conta_cadastro span{
+    color: var(--verde);
+}
+
+.main-cadastro-etapa2 .conta_cadastro {
+    align-self: center;
+    margin-top: 10px;
+    font-size: 18px;
+    
+}
+
+.main-cadastro-etapa2 .form_checkbox a {
+    gap: 15px;
+    align-self: center;
+    text-decoration: none;
+}
+
+.main-cadastro-etapa2 #email,
+.main-cadastro-etapa2 #nome,
+.main-cadastro-etapa2 #senha {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid rgba(203, 210, 220, 0.5);
+    border-radius: 4px;
+    height: 36px;
+    font-family: var(--verdana);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13.5px;
+    line-height: 39px;
+    letter-spacing: -0.01em;
+    color: var(--branco);
+    background-color: var(--azul);
+}
+
+.main-cadastro-etapa2 #email:focus,
+.main-cadastro-etapa2 #nome:focus,
+.main-cadastro-etapa2 #senha:focus {
+    color: var(--branco);
+    outline-color: var(--verde);
+    caret-color: var(--verde);
+}
+
+.main-cadastro-etapa2 .image_voltar_responsivo {
+    display: none;
+}
+
+@media screen and (max-width:1000px) {
+    .main-cadastro-etapa2 .conteudo {
+        width: 100%;
+    }
+    .main-cadastro-etapa2 .dados_usuario form {
+        width: 100%;
+    }
+    .main-cadastro-etapa2 #email,
+    .main-cadastro-etapa2 #nome,
+    .main-cadastro-etapa2 #senha {
+        height: 56px;
+        width: 100%;
+    }
+    .main-cadastro-etapa2 .alinhamento_imagens {
+        display: none;
+    }
+    .main-cadastro-etapa2 .pagina {
+        padding-bottom: 80px;
+        width: 90%;
+    }
+    .main-cadastro-etapa2 .image_voltar_responsivo {
+        display: initial;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-bottom: 35px;
+    }
+    .main-cadastro-etapa2 .image_voltar_responsivo a {
+        text-decoration: none;
+        color: var(--verde);
+        font-size: 25px;
+    }
+    .main-cadastro-etapa2 .bem_vindo {
+        margin: 0 auto;
+    }
+    .main-cadastro-etapa2 .button_cont {
+        height: 54px;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 13px;
+    }
+    .main-cadastro-etapa2 .bem_vindo span {
+        color: #61D248;
+        width: 280px;
+        text-align: center;
+    }
+    .main-cadastro-etapa2 .dados_usuario form {
+        width: 100%;
+    }
+    .main-cadastro-etapa2 .dados_usuario form div.form_checkbox {
+        font-size: 16px;
+    }
+    .main-cadastro-etapa2 .dados_usuario {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .main-cadastro-etapa2 .conta_cadastro {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: var(--branco);
+    }
+    .main-cadastro-etapa2 .bem_vindo h1 {
+        text-align: center;
+    }
+}
