@@ -1,0 +1,315 @@
+
+
+.main-cadastro {
+    background-color: var(--azul);
+    color: var(--branco);
+    justify-content: center;
+    height: 100vh;
+    display: flex;
+    
+}
+
+.main-cadastro .image_voltar a {
+    padding-left: 20px;
+}
+
+.main-cadastro .image_voltar {
+    display: flex;
+    align-self: flex-start;
+    
+}
+
+
+
+.main-cadastro .conteudo {
+
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-cadastro .bc {
+    text-align: center;
+}
+
+
+.main-cadastro .image_voltar a {
+    text-decoration: none;
+    font-family: var(--vw);
+    color: var(--verde);
+    font-size: 30px;
+}
+
+.main-cadastro  main a {
+    color: var(--branco);
+    justify-content: center;
+
+}
+
+.main-cadastro main {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    gap: 120px;
+
+}
+
+.main-cadastro .alinhamento_imagens {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin: 100px;
+
+}
+
+.main-cadastro .ilustracao {
+    height: 450px;
+
+}
+
+.main-cadastro .bem_vindo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-cadastro .bem_vindo span {
+    color: #61D248;
+    align-self: flex-start;
+}
+
+.main-cadastro .bem_vindo h1 {
+    padding: 0 0 15px;
+}
+
+.main-cadastro .dados_usuario form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 20px;
+
+}
+
+.main-cadastro .dados_usuario form label {
+    align-self: flex-start;
+    font-size: 20px;
+}
+
+.main-cadastro .dados_usuario form>div {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main-cadastro .dados_usuario form>div input {
+    padding-left: 10px;
+}
+
+.main-cadastro .dados_usuario form div.form_checkbox {
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 19px;
+}
+
+.main-cadastro .logo {
+    width: 300px;
+    margin: 20px;
+
+}
+
+.main-cadastro .pagina {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--verdana);
+
+}
+
+.main-cadastro .dados_usuario input {
+    height: 30px;
+}
+
+.main-cadastro .form_checkbox>div {
+    display: flex;
+    gap: 10px;
+}
+
+.main-cadastro .form_checkbox>div a {
+    align-self: center;
+}
+
+
+.main-cadastro .button_cont {
+    border: 2px solid #61D248;
+    border-radius: 4px;
+    color: #61D248;
+    padding: 10px;
+    font-family: var(--verdana);
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+
+
+}
+
+.button_esqueceusenha{
+    color: var(--branco);
+    display: flex;
+    width:100%;
+    justify-content:center;
+    
+}
+
+.main-cadastro .button_cont:hover {
+    background-color: var(--verde);
+    color: var(--azul);
+    transition: 0.3s;
+}
+
+.main-cadastro .conta_cadastro a {
+    color: #61D248;
+    text-decoration: none;
+}
+
+.main-cadastro .conta_cadastro {
+    align-self: center;
+    margin-top: 10px;
+    font-size: 18px;
+
+}
+
+.main-cadastro .form_checkbox a {
+    gap: 15px;
+    align-self: center;
+
+}
+
+.main-cadastro #email,
+.main-cadastro #nome,
+.main-cadastro #senha {
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid rgba(203, 210, 220, 0.5);
+    border-radius: 4px;
+    height: 36px;
+    font-family: var(--verdana);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13.5px;
+    line-height: 39px;
+    letter-spacing: -0.01em;
+    color: var(--branco);
+    background-color: var(--azul);
+}
+
+.main-cadastro #email:focus,
+.main-cadastro #nome:focus,
+.main-cadastro #senha:focus {
+    color: var(--branco);
+    outline-color: var(--verde);
+    caret-color: var(--verde);
+}
+
+.main-cadastro .image_voltar_responsivo{
+    display: none;
+}
+
+
+
+@media screen and (max-width:1000px) {
+
+
+
+    /* .main-cadastro .conteudo {
+        width: 100%;
+    } */
+
+    .main-cadastro .dados_usuario form {
+        width: 100%;
+    }
+
+    .main-cadastro #email,
+    .main-cadastro #nome,
+    .main-cadastro #senha {
+        height: 56px;
+        width: 100%;
+
+    }
+
+    .main-cadastro .alinhamento_imagens {
+        display: none;
+    }
+
+
+    .main-cadastro .pagina{
+        padding-bottom: 80px;
+        width: 90%;
+
+    }
+
+
+    .main-cadastro .image_voltar_responsivo{
+        display: initial;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding-bottom: 35px;
+        display: none;
+    }
+    .main-cadastro .image_voltar_responsivo a{
+        text-decoration: none;
+        color: var(--verde);
+        font-size: 25px;
+    }
+
+
+    .main-cadastro .bem_vindo {
+        margin: 0 auto;
+    }
+
+    .main-cadastro .button_cont {
+        height: 54px;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 13px;
+    }
+
+    .main-cadastro .bem_vindo span {
+        color: #61D248;
+        width: 280px;
+        text-align: center;
+    }
+
+
+
+    .main-cadastro .dados_usuario form {
+        width: 100%;
+
+    }
+
+
+    .main-cadastro .dados_usuario form div.form_checkbox {
+        font-size: 16px;
+    }
+
+    .main-cadastro .dados_usuario {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .main-cadastro .conta_cadastro {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-cadastro .bem_vindo h1 {
+        text-align: center;
+    }
+}

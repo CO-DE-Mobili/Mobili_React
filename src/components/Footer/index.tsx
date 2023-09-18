@@ -5,6 +5,8 @@ import imgTwitter from "../../assets/images/icon_twitter.svg"
 import imgLinkedin from "../../assets/images/icon_linkedin.svg"
 import imgInstagram from "../../assets/images/icon_instagram.svg"
 import imgLogoII from "../../assets/images/logo_mobili_branca.svg"
+import { Link } from "react-router-dom";
+
 
 function Footer() {
     return (
@@ -15,18 +17,18 @@ function Footer() {
                         <img className="logo_footer" src={imgLogoII} alt="" />
                         <div className="redes_sociais">
                             <nav>
-                                <a href="#">
+                                <Link to="https://pt-br.facebook.com/">
                                     {" "}
                                     <img src={imgFacebook} alt="" />{" "}
-                                </a>
-                                <a href="#">
+                                </Link>
+                                <Link to="">
                                     {" "}
                                     <img src={imgTwitter} alt="" />{" "}
-                                </a>
-                                <a href="#">
+                                </Link>
+                                <Link to="#">
                                     {" "}
                                     <img src={imgLinkedin} alt="" />{" "}
-                                </a>
+                                </Link>
                                 <a href="#">
                                     {" "}
                                     <img src={imgInstagram} alt="" />{" "}
@@ -39,12 +41,24 @@ function Footer() {
                         <nav className="menu_footer">
                             <span>Paginas</span>
                             <ul>
-                                <li>Home</li>
-                                <li>Quem somos</li>
-                                <li>Contato</li>
-                                <li>Suporte</li>
-                                <li>Login</li>
+                                <Link to="/">
+                                    <li>Home</li>
+                                </Link>
+                                <Link to="/quem_somos">
+                                    <li>Quem somos</li>
+                                </Link>
+                                <Link to="">
+                                    <li>Contato</li>
+                                </Link>
+                                <Link to="/suporte">
+                                    <li>Suporte</li>
+                                </Link>
+                                <Link to="/login">
+                                    <li>Login</li>
+                                </Link>
+                                <Link to="/cadastro/usuario">
                                 <li>Cadastro</li>
+                                </Link>
                             </ul>
                         </nav>
                         <div className="news">
