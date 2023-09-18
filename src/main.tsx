@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Route, Routes  } from "react-router-dom";
 
 //Pages
-import Contato from "./pages/Contato/";
+import Contato from "./pages/Contato"
 import CadastroUsuario from './pages/Cadastro/Usuario'
 import UsuarioEtapa2 from './pages/Cadastro/UsuarioEtapa2'
 import RedefinirSenha from "./pages/RedefinirSenha";
@@ -15,7 +15,7 @@ import Login from './pages/Login'
 import Home from "./pages/Home";
 import Suporte from './pages/Suporte'
 
-import Perfil_parceiro from './pages/Perfil_Parceiro';
+import Perfil_parceiro from './pages/perfil_parceiro';
 import Editar_perfil_parceiro from './pages/PerfilParceiro_Editar';
 import Propaganda_PerfilParceiro from './pages/Propaganda_PerfilParceiro';
 import Gerenciar_perfil_parceiro from './pages/PerfilParceiro_Gerenciar'
@@ -42,7 +42,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 				{/* Gerais */}
 				<Route path='/quem_somos' element={<QuemSomos/>}/>
 				<Route path='/privacidade' element={<Privacidade/>}/>
-				{/* <Route path='/contato' element={<Contato />} /> */}
+				<Route path='/contato' element={<Contato />} />
 
 				{/* Perfil */}
 				<Route path='/perfil_parceiro/gerenciamento' element={<Gerenciar_perfil_parceiro />} />
