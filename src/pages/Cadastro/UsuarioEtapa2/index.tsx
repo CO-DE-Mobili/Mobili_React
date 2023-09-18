@@ -13,7 +13,7 @@ function UsuarioEtapa2() {
             <div className="conteudo">
                 <div className="alinhamento_imagens">
                 <div className="image_voltar">
-                    <Link to={"/"} className="botao_voltar">
+                    <Link to={"/cadastro/usuario"} className="botao_voltar">
                     {" "}
                     <img src={seta} alt="" />
                     </Link>
@@ -56,7 +56,7 @@ function UsuarioEtapa2() {
                     <div className="bc">
                         <Link
                         className="button_cont"
-                       to={"/perfil_parceiro/gerenciamento"}
+                       to={"/perfil_parceiro/"}
                         >
                         Finalizar
                         </Link>

@@ -54,21 +54,10 @@ function RedefinirSenha() {
                                     <input type="password" id="senha" placeholder="Digite sua senha" />
                                 </div>
                                 <div>
-                                    <div className="form_checkbox">
-                                        <div>
-                                            <input
-                                                type="checkbox"
-                                                name=""
-                                                id="checkbox"
-                                            // onChange={(e) => setCheckboxLogado(e.target.value)}
-                                            />
-                                            <Link to={"#"}>Lembrar de mim</Link>
-                                        </div>
+                                    
 
-                                        <Link to={"#"}>
-                                            Esqueci minha senha
-                                        </Link>
-                                    </div>
+                                       
+                                    
                                     <div className="bc">
                                         <Link className="button_cont" to={"#"}>
                                             Enviar

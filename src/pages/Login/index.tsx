@@ -34,7 +34,7 @@ function Login() {
 
                             </Link>
                             <div>
-                                <Link to= {"#"} className="botao_voltar">
+                                <Link to= {"/"} className="botao_voltar">
                                     {" "}
                                     Voltar
                                 </Link>
@@ -63,7 +63,7 @@ function Login() {
                                     <input
                                         type="email"
                                         id="email"
-                                        defaultValue="Seu E-mail aqui"
+                                        placeholder="Seu E-mail aqui"
                                         // onChange={(e) => setEmail(e.target.value)}
                                     />
                                 </div>
@@ -71,7 +71,7 @@ function Login() {
                                     <label htmlFor="senha">Senha</label>
                                     <input
                                         type="password"
-                                        defaultValue="Digite sua senha"
+                                        placeholder="Digite sua senha"
                                         id="senha"
                                         // onChange={(e) => setSenha(e.target.value)}
                                     />
@@ -86,12 +86,12 @@ function Login() {
                                         />
                                         <Link to= {"#"}>Lembrar de mim</Link>
                                     </div>
-                                    <Link to={"#"}>
+                                    <Link to={"/redefinir/senha"}>
                                         Esqueci minha senha
                                     </Link>
                                 </div>
                                 <div className="bc">
-                                    <Link className="button_cont" to={"#"}>
+                                    <Link className="button_cont" to={"/perfil_parceiro/"}>
                                         Enviar
                                     </Link>
                                 </div>
@@ -101,7 +101,7 @@ function Login() {
                             <Link to={"#"}>
                                 <span>Não tem uma conta?</span>
                             </Link>
-                            <Link to="../Cadastro/cadastro.html" className="spanVerde_login">Cadastrar-se</Link>
+                            <Link to="../Cadastro/usuario" className="spanVerde_login">Cadastrar-se</Link>
                         </div>
                     </div>
                 </div>

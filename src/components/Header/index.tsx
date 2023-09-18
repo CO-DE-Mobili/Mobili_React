@@ -54,7 +54,7 @@ function Header() {
                                     <Link to="/quem_somos">Quem somos</Link>
                                 </li>
                                 <li>
-                                    <Link to={"#"}>Contato</Link>
+                                    <Link to={"/contato"}>Contato</Link>
                                 </li>
                                 <li>
                                     <Link to={"/suporte"}>Suporte</Link>
