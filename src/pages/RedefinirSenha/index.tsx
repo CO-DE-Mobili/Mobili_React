@@ -13,12 +13,12 @@ function RedefinirSenha() {
                 <div className="conteudo">
                     <div className="alinhamento_imagens">
                         <div className="image_voltar">
-                            <Link to={"#"} className="botao_voltar">
+                            <Link to={"/"} className="botao_voltar">
                                 {" "}
                                 <img src={imgseta} alt="" />
                             </Link>
                             <div>
-                                <Link to={"#"} className="botao_voltar">
+                                <Link to={"/"} className="botao_voltar">
                                     {" "}
                                     Voltar
                                 </Link>

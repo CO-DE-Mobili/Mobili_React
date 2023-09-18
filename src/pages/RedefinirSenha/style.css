@@ -9,6 +9,8 @@
 .redefinir_senha .image_voltar {
     display: flex;
     align-self: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
 }
 
 .redefinir_senha .conteudo {
