@@ -1,13 +1,4 @@
-
-.main-home .body {
-    background-color: #E8E9EB;
-
-}
-
-
-
 /*MAIN*/
-
 
 .main-home .posicionamento_texto_home {
     display: flex;
@@ -26,7 +17,7 @@
     background-color: var(--azul);
     display: flex;
     align-items: center;
-    height: 100vh;
+    height: calc(100vh + 100px);
 }
 
 .main-home .texto_banner_home,
