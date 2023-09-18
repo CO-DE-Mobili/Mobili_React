@@ -23,7 +23,7 @@ function home() {
 
 
     return (
-        <main className="home">
+        <main className="main-home">
   <h1>home</h1>
   <div className="banner_home">
     <div className="posicionamento posicionamento_texto_home">
