@@ -1,4 +1,4 @@
-.check {
+#header .check {
     display: none;
 }
 
@@ -7,9 +7,7 @@
     height: 90px;
     background-color: var(--branco);
     display: flex;
-    flex-direction: column;
     justify-content: center;
-
 }
 
 
@@ -120,7 +118,7 @@
     border-radius: 4px;
     font-size: 18px;
     width: 130px;
-    height: 30px;
+    height: 40px;
     padding: 8px;
     text-align: center;
     transition: 0.3s;
