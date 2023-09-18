@@ -4,6 +4,8 @@ import ilustracao_um from "../../assets/images/ilustra_1_contato.png";
 import ilustracao_dois from "../../assets/images/ilustra_2_contato.png";
 
 import { useState } from "react";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 // import api from "../../utils/api";
 
 function Contato() {
@@ -37,6 +39,7 @@ function Contato() {
 	return (
 		<>
 			<main className="main-contato">
+				<Header/>
 				<h1>Entre em contato conosco</h1>
 				<div className="posicionamento_main_contato posicionamento">
 					<div className="forms_contato">
@@ -97,6 +100,7 @@ function Contato() {
 				</div>
 				<img src={ilustracao_um} alt="" className="ilustra1_contato" />
 				<img src={ilustracao_dois} alt="" className="ilustra2_contato" />
+				<Footer/>
 			</main>
 		</>
 	)
