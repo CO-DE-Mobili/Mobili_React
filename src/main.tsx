@@ -12,11 +12,11 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 // import QuemSomos from './pages/QuemSomos';
 // import Login from './pages/Login'
 // import Home from "./pages/Home";
-import Suporte from './pages/Suporte'
+// import Suporte from './pages/Suporte'
 
 //componentes
 import ModalPropaganda from './components/Modal_Adm_Gerenciamento_Propagandas'
-import ModalParceiro from './components/Modal_Adm_Gerenciamento_Propagandas'
+import ModalParceiro from './components/Modal_Adm_Gerenciamento_Parceiro'
 
 
 
