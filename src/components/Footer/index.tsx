@@ -21,15 +21,15 @@ function Footer() {
                                     {" "}
                                     <img src={imgFacebook} alt="" />{" "}
                                 </Link>
-                                <Link to="">
+                                <Link to="https://twitter.com/">
                                     {" "}
                                     <img src={imgTwitter} alt="" />{" "}
                                 </Link>
-                                <Link to="#">
+                                <Link to="https://www.linkedin.com/home">
                                     {" "}
                                     <img src={imgLinkedin} alt="" />{" "}
                                 </Link>
-                                <a href="#">
+                                <a href="https://www.instagram.com/">
                                     {" "}
                                     <img src={imgInstagram} alt="" />{" "}
                                 </a>
@@ -47,7 +47,7 @@ function Footer() {
                                 <Link to="/quem_somos">
                                     <li>Quem somos</li>
                                 </Link>
-                                <Link to="">
+                                <Link to="/contato">
                                     <li>Contato</li>
                                 </Link>
                                 <Link to="/suporte">

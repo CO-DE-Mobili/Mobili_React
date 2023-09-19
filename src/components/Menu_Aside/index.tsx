@@ -29,7 +29,7 @@ function Menu_parceiro() {
                 <div className="aside_top_perfilParceiro">
                     <h2>Menu</h2>
                     <div className="link_perfilParceiro">
-                        <Link to={""}>
+                        <Link to={"/perfil_parceiro/"}>
                             <img src={iconePerfil} alt="" /> Meu Perfil
                         </Link>
                     </div>
@@ -37,7 +37,7 @@ function Menu_parceiro() {
                         className="link_gerenciamento_perfilParceiro"
                         style={{ backgroundColor: "#001E50" }}
                     >
-                        <Link to={""}>
+                        <Link to={"/perfil_parceiro/gerenciamento"}>
                             <img src={iconeGerenciamento} alt="" /> Gerenciamento
                         </Link>
                     </div>
@@ -46,13 +46,13 @@ function Menu_parceiro() {
                     <h2>Redes Sociais</h2>
                     <nav>
                         <div>
-                            <Link to={""}>
+                            <Link to={"https://pt-br.facebook.com/"}>
                                 <img
                                     src={iconeFacebook_perfil}
                                     alt=""
                                 />{" "}
                             </Link>
-                            <Link to={""}>
+                            <Link to={"https://twitter.com/"}>
                                 <img
                                     src={iconeTwitter_perfil}
                                     alt=""
@@ -60,13 +60,13 @@ function Menu_parceiro() {
                             </Link>
                         </div>
                         <div>
-                            <Link to={""}>
+                            <Link to={"https://www.linkedin.com/home"}>
                                 <img
                                     src={iconeLinkedin_perfil}
                                     alt=""
                                 />
                             </Link>
-                            <Link to={""}>
+                            <Link to={"https://www.instagram.com/"}>
                                 <img
                                     src={iconeInstagram_perfil}
                                     alt=""
@@ -83,7 +83,7 @@ function Menu_parceiro() {
                             <Link to={"#"}>Rebeca Flores</Link>
                             <span>eu@gmail.com</span>
                         </div>
-                        <Link to={"../index.html"}>
+                        <Link to={"/"}>
                             <img
                                 src={logout}
                                 alt=""

@@ -9,6 +9,8 @@
 .redefinir_senha .image_voltar {
     display: flex;
     align-self: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
 }
 
 .redefinir_senha .conteudo {
@@ -85,7 +87,7 @@
     display: flex;
     flex-direction: column;
     width: 400px;
-    gap: 25px;
+    gap: 10px;
 
 }
 
@@ -155,10 +157,6 @@
     gap: 10px;
 }
 
-.redefinir_senha .form_checkbox>div a {
-    /* align-self: center;
-    text-align: start; */
-}
 
 
 .redefinir_senha .button_cont {
