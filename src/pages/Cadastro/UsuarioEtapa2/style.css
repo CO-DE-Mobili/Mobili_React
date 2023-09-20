@@ -113,7 +113,8 @@
 }
 
 .main-cadastro-etapa2 .dados_usuario input {
-    height: 30px;
+    height: 45px;
+    background-color: transparent;
 }
 
 .main-cadastro-etapa2 .form_checkbox>div {

@@ -105,6 +105,7 @@
 
 .main-cadastro .dados_usuario form>div input {
     padding-left: 10px;
+    background-color: transparent;
 }
 
 .main-cadastro .dados_usuario form div.form_checkbox {
@@ -129,7 +130,7 @@
 }
 
 .main-cadastro .dados_usuario input {
-    height: 30px;
+    height: 45px;
 }
 
 .main-cadastro .form_checkbox>div {
