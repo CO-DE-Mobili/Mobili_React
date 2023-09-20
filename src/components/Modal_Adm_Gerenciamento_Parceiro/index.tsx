@@ -21,37 +21,32 @@ function modalparceiro() {
                         <div className="linha_input">
                             <div className="item_input">
                                 <label htmlFor="nome">Nome</label>
-                                <input type="text" id="nome" placeholder="Rebeca" />
+                                <input type="text" id="" placeholder="Rebeca" />
                             </div>
                             <div className="item_input">
                                 <label htmlFor="sobrenome">Sobrenome</label>
-                                <input type="text" id="sobrenome" placeholder="Flores" />
+                                <input type="text" id="" placeholder="Flores" />
                             </div>
                         </div>
                         <div className="linha_input">
                             <div className="item_input">
                                 <label htmlFor="email">E-mail</label>
-                                <input type="email" id="email" placeholder="eu@email.com" />
+                                <input type="email" id="" placeholder="eu@email.com" />
                             </div>
                             <div className="item_input">
                                 <label htmlFor="telefone">Telefone</label>
-                                <input type="tel" id="telefone" placeholder="1234-5678" />
+                                <input type="tel" id="" placeholder="1234-5678" />
                             </div>
                         </div>
                         <div className="descricao">
                             <label htmlFor="senha">Descrição</label>
-                            <input
-                                type="text"
-                                id="descricao"
-                            />
+                            <textarea name="" id=""></textarea>
                         </div>
                         {/* <input type="submit" value="Editar" class="submit_button"> */}
                         <div className="botoes_editar_perfilParceiro">
-                            <a className="submit_button_perfilParceiro_cancelar" href="./perfil_parceiro.html">Cancelar</a>
+                            <a className="submit_button_perfilParceiro_rejeitar" href="./perfil_parceiro.html">Rejeitar</a>
 
-                            <div>
-                                <a className="submit_button_perfilParceiro_salvar" href="#">Salvar</a>
-                            </div>
+                            <a className="submit_button_perfilParceiro_aprovar" href="#">Aprovar</a>
                         </div>
                     </form>
                 </div>
