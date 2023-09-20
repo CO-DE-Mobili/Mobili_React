@@ -28,11 +28,7 @@ function Menu_parceiro() {
                 />
                 <div className="aside_top_perfilParceiro">
                     <h2>Menu</h2>
-                    <div className="link_perfilParceiro">
-                        <Link to={"/perfil_parceiro/"}>
-                            <img src={iconePerfil} alt="" /> Meu Perfil
-                        </Link>
-                    </div>
+
                     <div
                         className="link_gerenciamento_perfilParceiro"
                         style={{ backgroundColor: "#001E50" }}
