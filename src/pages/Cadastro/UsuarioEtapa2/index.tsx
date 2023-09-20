@@ -15,11 +15,16 @@ function UsuarioEtapa2() {
     function verificarSenhasIguais(event: any) {
         event.preventDefault()
 
-        if (senha != confirmarSenha)
+        if (!senha || !confirmarSenha)
+            console.log("Senhas não podem ser vazias");
+        else
+        {
+            if (senha != confirmarSenha)
             console.log("As senhas não conferem!");
-        else {
-            console.log("As senhas conferem!");
-            navigate("/")
+            else {
+                console.log("As senhas conferem!");
+                navigate("/")
+            }
         }
     }
     return (
@@ -62,11 +67,20 @@ function UsuarioEtapa2() {
                             <form action="" onSubmit={verificarSenhasIguais}>
                                 <div>
                                     <label htmlFor="nome">Senha</label>
-                                    <input type="password" id="senha" placeholder="Digite sua senha" onChange={(e) => setSenha(e.target.value)} />
+                                    <input 
+                                        type="password" 
+                                        id="senha" 
+                                        placeholder="Digite sua senha"
+                                        required
+                                        onChange={(e) => setSenha(e.target.value)} />
                                 </div>
                                 <div>
                                     <label htmlFor="senha">Confirmar senha</label>
-                                    <input type="password" id="senha" placeholder="Digite sua senha" onChange={(e) => setConfirmarSenha(e.target.value)} />
+                                    <input 
+                                        type="password" id="senha" 
+                                        placeholder="Digite sua senha"
+                                        required
+                                        onChange={(e) => setConfirmarSenha(e.target.value)} />
                                 </div>
                                 <div className="bc">
                                     <input
