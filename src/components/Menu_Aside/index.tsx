@@ -28,17 +28,18 @@ function Menu_parceiro() {
                 />
                 <div className="aside_top_perfilParceiro">
                     <h2>Menu</h2>
-                    <div className="link_perfilParceiro">
-                        <Link to={"/perfil_parceiro/"}>
-                            <img src={iconePerfil} alt="" /> Meu Perfil
-                        </Link>
-                    </div>
+
                     <div
                         className="link_gerenciamento_perfilParceiro"
                         style={{ backgroundColor: "#001E50" }}
                     >
                         <Link to={"/perfil_parceiro/gerenciamento"}>
                             <img src={iconeGerenciamento} alt="" /> Gerenciamento
+                        </Link>
+                    </div>
+                    <div className="link_perfilParceiro">
+                        <Link to={"/perfil_parceiro/propaganda"}>
+                            <img src={iconePerfil} alt="" /> Adicionar Propaganda
                         </Link>
                     </div>
                 </div>
@@ -60,7 +61,7 @@ function Menu_parceiro() {
                             </Link>
                         </div>
                         <div>
-                            <Link to={"https://www.linkedin.com/home"}>
+                            <Link to={"https://br.linkedin.com/"}>
                                 <img
                                     src={iconeLinkedin_perfil}
                                     alt=""
@@ -105,28 +106,28 @@ function Menu_parceiro() {
                             </Link>
                         </li>
                         <li className="list">
-                            <Link to={"./gerenciamento/index.html"}>
+                            <Link to={"./gerenciamento/"}>
                                 <span className="icon">
                                     <GridOutline color={"#fff"}/>
                                 </span>
                             </Link>
                         </li>
                         <li className="list">
-                            <Link to={"./criar_propaganda/index.html"}>
+                            <Link to={"./criar_propaganda/"}>
                                 <span className="icon">
                                     <CreateOutline color={"#fff"}/>
                                 </span>
                             </Link>
                         </li>
                         <li className="list">
-                            <Link to={"./editarperfil.html"}>
+                            <Link to={"./editarperfil"}>
                                 <span className="icon">
                                     <SettingsOutline  color={"#fff"}/>
                                 </span>
                             </Link>
                         </li>
                         <li className="list">
-                            <Link to={"../index.html"}>
+                            <Link to={"#"}>
                                 <span className="icon">
                                     <ExitOutline color={"#fff"} />
                                 </span>

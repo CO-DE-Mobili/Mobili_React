@@ -39,6 +39,14 @@ function CadastroUsuario() {
     }
 
 
+    function vericarEmail(event: any) {
+        let usuario:string = email.substring(0, email.indexOf("@"));
+        usuario = email.substring(email.indexOf("@")+1);
+        console.log(usuario);
+        navigate("/cadastro/usuario/etapa2")
+        
+    }
+
 
     return (
         <>

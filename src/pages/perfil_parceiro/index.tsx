@@ -59,7 +59,7 @@ function Perfil_parceiro() {
                                 </div>
                                 
                                 {/* <input type="submit" value="Editar" class="submit_button"> */}
-                                <Link className="submit_button_perfilParceiro" to={"./editarperfil.html"}>
+                                <Link className="submit_button_perfilParceiro" to={"/perfil_parceiro/editar"}>
                                     Editar
                                 </Link>
 
