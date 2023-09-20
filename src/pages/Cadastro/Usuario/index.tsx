@@ -1,14 +1,17 @@
 import "./style.css"
 
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+
 
 //imagens
 import seta from "../../../assets/images/seta.png";
 import ilustracaologin from "../../../assets/images/ilustra_login.svg";
+import { useState } from "react";
 
 function CadastroUsuario() {
 
-    // const [email, setEmail] = useState<String>("");
+    const [email, setEmail] = useState<String>("");
+    const navigate = useNavigate();
     // const [nome, setNome] = useState<string>("");
 
 
@@ -22,6 +25,14 @@ function CadastroUsuario() {
 
 
     // }
+
+    function vericarEmail(event: any) {
+        let usuario:string = email.substring(0, email.indexOf("@"));
+        usuario = email.substring(email.indexOf("@")+1);
+        console.log(usuario);
+        navigate("/cadastro/usuario/etapa2")
+        
+    }
 
 
     return (
@@ -62,7 +73,7 @@ function CadastroUsuario() {
                             <h1>Crie sua conta!</h1>
                         </div>
                         <div className="dados_usuario">
-                            <form action="">
+                            <form action="" onSubmit={vericarEmail}>
                                 <div>
                                     <label htmlFor="nome">Nome completo</label>
                                     <input type="nome"
@@ -71,16 +82,16 @@ function CadastroUsuario() {
                                 </div>
                                 <div>
                                     <label htmlFor="email">E-mail</label>
-                                    <input type="email" id="email" placeholder="anamaria@yahoo.com" />
+                                    <input type="email" id="email" placeholder="anamaria@yahoo.com" onChange={(e) => setEmail(e.target.value)}/>
                                 </div>
                                 <div>
                                     <label htmlFor="telefone">Telefone</label>
                                     <input type="'telefone" id="email" placeholder="(11)5698-8974" />
                                 </div>
                                 <div className="bc">
-                                    <Link className="button_cont" to={"../cadastro/usuario/etapa2"}>
-                                        Continuar
-                                    </Link>
+                                    <input className="button_cont"
+                                        type={"submit"}
+                                    />
                                 </div>
                             </form>
                         </div>

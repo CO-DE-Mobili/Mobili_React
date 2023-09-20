@@ -129,7 +129,7 @@
 }
 
 .main-cadastro .dados_usuario input {
-    height: 30px;
+    height: 45px;
 }
 
 .main-cadastro .form_checkbox>div {
@@ -151,7 +151,7 @@
     text-decoration: none;
     font-size: 18px;
     transition: 0.3s;
-
+    background:var(--verdana)
 
 }
 
@@ -277,6 +277,7 @@
         width: 100%;
         margin-bottom: 20px;
         padding: 13px;
+        
     }
 
     .main-cadastro .bem_vindo span {
