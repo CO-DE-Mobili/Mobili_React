@@ -1,27 +1,18 @@
-# React + TypeScript + Vite
+🔥 Notas da Versão 2.0 - Website Mobili 📢🚨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Estamos felizes em apresentar a segunda versão do website Mobili, nessa versão, tivemos o objetivo de desenvolver uma aplicação web interativa utilizando as técnicas de lógica de programação, e as tecnologias JavaScript, TypeScript e React. 
 
-Currently, two official plugins are available:
+Principais Novidades:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Tecnologias Modernas: Na versão anterior, começamos com HTML e CSS, mas agora implementamos algumas técnicas de lógica de programação e utilizamos JavaScript, TypeScript e React para tornar o site um pouco mais interativo. ✅
 
-## Expanding the ESLint configuration
+Componentes Reutilizáveis: Desenvolvemos alguns componentes reutilizáveis para ajudar a manter uma aparência mais consistente em todo o website Mobili. ✅
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Validação de E-mail: Adicionamos uma simples validação de e-mail para melhorar a qualidade dos dados inseridos pelos usuários. ✅
 
-- Configure the top-level `parserOptions` property like this:
+Tela de Cadastro de Empresas: Introduzimos uma nova tela de cadastro de empresas para simplificar o processo de integração de novos parceiros em nossa plataforma. ✅
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+Pequenas Melhorias: Realizamos algumas melhorias internas para otimizar o desempenho e garantir um ambiente mais seguro. ✅
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+Agradecemos por sua escolha em utilizar o website Mobili e esperamos que essas melhorias modestas possam tornar sua visita um pouco mais agradável. 🚀 Como sempre, estamos abertos a feedback e continuaremos trabalhando para aprimorar nosso serviço de acordo com suas necessidades. Se tiver alguma sugestão ou dúvida, não hesite em nos contatar.
