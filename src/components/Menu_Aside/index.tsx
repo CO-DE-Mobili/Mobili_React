@@ -37,6 +37,14 @@ function Menu_parceiro() {
                             <img src={iconeGerenciamento} alt="" /> Gerenciamento
                         </Link>
                     </div>
+                    <div
+                        className="link_gerenciamento_perfilParceiro"
+                        style={{ backgroundColor: "#001E50" }}
+                    >
+                        <Link to={"/perfil_parceiro/"}>
+                            <img src={iconeGerenciamento} alt="" /> Perfil
+                        </Link>
+                    </div>
                     <div className="link_perfilParceiro">
                         <Link to={"/perfil_parceiro/propaganda"}>
                             <img src={iconePerfil} alt="" /> Adicionar Propaganda
