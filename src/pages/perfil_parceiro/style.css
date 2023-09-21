@@ -54,7 +54,6 @@
     /* background-color: #001e5060; */
     /* background-color: #BFC6D3; */
     /* background-color: #001e5020; */
-    height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -65,9 +64,8 @@
 
 #main_perfil_parceiro .conteudo_perfilParceiro img {
     align-self: stretch;
-    width: 50%;
+    width: 40%;
 }
-
 
 #main_perfil_parceiro .perfil_principal_perfilParceiro img {
     width: 30%;

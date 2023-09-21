@@ -63,7 +63,9 @@
 
 }
 
-
+#main_perfil_parceiro .conteudo_EditarPerfilParceiro>img {
+    width: 40%;
+}
 
 .header_EditarperfilParceiro .foto_EditarperfilParceiro img{
     width: 20%;

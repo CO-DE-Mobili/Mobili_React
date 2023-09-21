@@ -74,7 +74,7 @@ function Editar_perfil_parceiro() {
                             </form>
                         </div>
                     </div>
-                    <img src={ilustraPerfil} alt="" />
+                    <img src={ilustraPerfil} alt="" className="ilustracao_perfil"/>
                 </section>
             </main>
         </>
