@@ -1,3 +1,6 @@
+
+<iframe src="https://giphy.com/embed/eImrJKnOmuBDmqXNUj" width="480" height="300" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/regalmovies-minions-breaking-despicable-me-eImrJKnOmuBDmqXNUj">via GIPHY</a></p>
+
 🔥 Notas da Versão 2.0 - Website Mobili 📢🚨
 
 Estamos felizes em apresentar a segunda versão do website Mobili, nessa versão, tivemos o objetivo de desenvolver uma aplicação web interativa utilizando as técnicas de lógica de programação, e as tecnologias JavaScript, TypeScript e React. 
