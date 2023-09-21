@@ -1,5 +1,4 @@
-
-<div style="width:100%;height:0;padding-bottom:63%;position:relative;"><iframe src="https://giphy.com/embed/eImrJKnOmuBDmqXNUj" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/regalmovies-minions-breaking-despicable-me-eImrJKnOmuBDmqXNUj">via GIPHY</a></p>
+![Alt Text](https://media.giphy.com/media/eImrJKnOmuBDmqXNUj/giphy.gif)
 
 🔥 Notas da Versão 2.0 - Website Mobili 📢🚨
 
