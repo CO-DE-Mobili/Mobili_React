@@ -9,18 +9,30 @@ import "./style.css";
 // import imgLogo2 from "../../assets/images/logo2.png";
 import imgIlustra from "../../assets/images/ilustra_login.svg";
 import imgSeta from "../../assets/images/seta.png";
+import Input from "react-select/dist/declarations/src/components/Input";
 
 
 function Login() {
 
     //variavel navigate que utiliza a funcao useNavigate para navegar entre os componentes
 
-    // const navigate = useNavigate();
+     const navigate = useNavigate();
     
-    // const [email, setEmail] = useState<string>("");
-    // const [senha, setSenha] = useState<string>("");
+     const [email, setEmail] = useState<string>("");
+     const [senha, setSenha] = useState<string>("");
     // // TROCAR TIPO PARA BOOLEANO
     // const [checkboxLogado, setCheckboxLogado] = useState<string>("")
+
+    const loginObj ={
+        email:email,
+        senha:senha
+    }
+    function CadastroFormLogin(event:any){
+        event.preventDefault()
+        console.log(loginObj);
+
+}
+
 
     return (
         <>
@@ -57,14 +69,14 @@ function Login() {
                             <h1>Acesse sua conta!</h1>
                         </div>
                         <div className="dados_usuario">
-                            <form action="POST">
+                            <form  onSubmit={CadastroFormLogin}  action="POST">
                                 <div>
                                     <label htmlFor="email">E-mail</label>
                                     <input
                                         type="email"
                                         id="email"
                                         placeholder="Seu E-mail aqui"
-                                        // onChange={(e) => setEmail(e.target.value)}
+                                         onChange={(e) => setEmail(e.target.value)}
                                     />
                                 </div>
                                 <div>
@@ -73,7 +85,7 @@ function Login() {
                                         type="password"
                                         placeholder="Digite sua senha"
                                         id="senha"
-                                        // onChange={(e) => setSenha(e.target.value)}
+                                         onChange={(e) => setSenha(e.target.value)}
                                     />
                                 </div>
                                 <div className="form_checkbox">
@@ -91,18 +103,18 @@ function Login() {
                                     </Link>
                                 </div>
                                 <div className="bc">
-                                    <Link className="button_cont" to={"/perfil_parceiro/"}>
-                                        Enviar
-                                    </Link>
+                                    <input type={"submit"} className="button_cont"                                         
+                                    />
                                 </div>
-                            </form>
-                        </div>
-                        <div className="conta_cadastro">
+                                <div className="conta_cadastro">
                             <Link to={"#"}>
                                 <span>Não tem uma conta?</span>
                             </Link>
                             <Link to="../Cadastro/usuario" className="spanVerde_login">Cadastrar-se</Link>
+                               </div>
+                            </form>
                         </div>
+                       
                     </div>
                 </div>
             </main>

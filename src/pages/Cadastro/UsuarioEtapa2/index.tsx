@@ -15,6 +15,14 @@ function UsuarioEtapa2() {
     function verificarSenhasIguais(event: any) {
         event.preventDefault()
 
+        const cadastroObj={
+            senha :senha,
+            confirmarSenha: confirmarSenha,
+         
+        }
+
+
+
         if (!senha || !confirmarSenha)
             console.log("Senhas não podem ser vazias");
         else
@@ -25,7 +33,9 @@ function UsuarioEtapa2() {
                 console.log("As senhas conferem!");
                 navigate("/")
             }
+            console.log(cadastroObj);``
         }
+        
     }
     return (
         <>

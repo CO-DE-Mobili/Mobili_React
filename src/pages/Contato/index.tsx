@@ -18,7 +18,7 @@ function Contato() {
 	function enviarFormulario(event: any) {
 		event.preventDefault();
 		
-		const mensagem = {
+		const mensagemObj = {
 			nome: nome,
 			sobrenome: sobrenome,
 			email: email,
@@ -34,8 +34,9 @@ function Contato() {
 		// 	.catch((error: any) =>{
 		// 		console.log("n foi " + error)
 		// 	})
+		console.log(mensagemObj);
 	}
-
+	
 	return (
 		<>
 			<main className="main-contato">

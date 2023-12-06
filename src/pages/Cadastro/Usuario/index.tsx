@@ -17,11 +17,11 @@ function CadastroUsuario() {
 
     const navigate = useNavigate();
 
-    // const cadastro={
-    //     nome :nome,
-    //     email: email,
-    //     telefone: telefone
-    // }
+    const cadastroObj={
+        nome :nome,
+        email: email,
+        telefone: telefone
+    }
 
     function cadastro(event: any) {
         event.preventDefault()
@@ -36,6 +36,7 @@ function CadastroUsuario() {
             console.log(email, error);
             navigate("/cadastro/usuario/etapa2")
         }
+        console.log(cadastroObj);
     }
 
 

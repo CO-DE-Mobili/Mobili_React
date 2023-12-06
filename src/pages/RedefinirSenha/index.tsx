@@ -5,8 +5,22 @@ import { Link } from "react-router-dom";
 //imagens
 import imgilustra from "../../assets/images/ilustra_cadastro.svg";
 import imgseta from "../../assets/images/seta.png";
+import { useState } from "react";   
 
 function RedefinirSenha() {
+
+    const [senha, setSenha] = useState<string>("");
+    const [confirmarsenha, setconfirmarSenha] = useState<string>("");
+
+    const redefinirObj = {
+        senha:senha,
+        confirmarsenha:confirmarsenha
+    }
+
+    function cadastroformRedefinir(event: any) {
+        event.preventDefault()
+        console.log(redefinirObj);
+    }
     return (
         <>
             <main className="redefinir_senha">
@@ -44,28 +58,23 @@ function RedefinirSenha() {
                             <h1>Redefinir sua senha</h1>
                         </div>
                         <div className="dados_usuario">
-                            <form action="">
+                            <form onSubmit={cadastroformRedefinir}action="">
+                                <label htmlFor="senha">Senha</label>
+                                <input
+                                    type="password"
+                                    id = "senha"
+                                    placeholder="Senha"
+                                    onChange={(e) => setSenha(e.target.value)}
+                                />
+                                <label htmlFor="email">Confirmar senha</label>
+                                <input type="password" id="senha" placeholder="Digite sua senha" 
+                                    onChange={(e) => setconfirmarSenha(e.target.value)}
+                                />
                                 <div>
-                                    <label htmlFor="senha">Senha</label>
-                                    <input type="password" id="senha" placeholder="Digite sua senha" />
-                                </div>
-                                <div>
-                                    <label htmlFor="email">Confirmar senha</label>
-                                    <input type="password" id="senha" placeholder="Digite sua senha" />
-                                </div>
-                                <div>
-                                    
-
-                                       
-                                    
                                     <div className="bc">
-                                        <Link className="button_cont" to={"#"}>
-                                            Enviar
-                                        </Link>
-
-
-
-
+                                        <input type={"submit"} value = "enviar"  className="button_cont" />
+                                        
+        
                                     </div>
 
                                 </div>

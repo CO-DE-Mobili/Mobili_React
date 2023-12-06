@@ -1,6 +1,6 @@
 import ilustraPerfil from '../../assets/images/ilustra1_parceiro.svg';
 import fotoPerfilUsuario from '../../assets/images/REBECA.png';
-
+import { useState } from "react";
 
 // componente
 
@@ -10,6 +10,27 @@ import './style.css';
 
 
 function Editar_perfil_parceiro() {
+
+    const [nome, setNome] = useState<string>("");
+    const [sobrenome, setSobrenome] = useState<string>("");
+    const [email, setEmail] = useState<string>("");
+    const [telefone, setTelefone] = useState<string>("");
+    const [senha, setSenha] = useState<string>("");
+
+    const propagrandaParceiroObj={
+        nome:nome,
+        sobrenome:sobrenome,
+        email:email,
+        telefone:telefone,
+        senha:senha
+    }
+
+    function CadastroFormPropagandaParceiroObj(event:any){
+		event.preventDefault()
+		console.log(propagrandaParceiroObj);
+    }
+
+
 
     return (
         <>
@@ -33,25 +54,33 @@ function Editar_perfil_parceiro() {
                         </div>
 
                         <div className="perfil_info_perfilParceiro">
-                            <form action="">
+                            <form  onSubmit={CadastroFormPropagandaParceiroObj}>
                                 <div>
                                     <div>
                                         <label htmlFor="nome">Nome</label>
-                                        <input type="text" id="nome" placeholder="Rebeca" />
+                                        <input type="text" id="nome" placeholder="Rebeca"
+                                        onChange={(event) => setNome(event.target.value)}
+                                         />
                                     </div>
                                     <div>
                                         <label htmlFor="sobrenome">Sobrenome</label>
-                                        <input type="text" id="sobrenome" placeholder="Flores" />
+                                        <input type="text" id="sobrenome" placeholder="Flores"
+                                        onChange={(event) => setSobrenome(event.target.value)}
+                                         />
                                     </div>
                                 </div>
                                 <div>
                                     <div>
                                         <label htmlFor="email">E-mail</label>
-                                        <input type="email" id="email" placeholder="eu@email.com" />
+                                        <input type="email" id="email" placeholder="eu@email.com"
+                                        onChange={(event) => setEmail(event.target.value)}
+                                         />
                                     </div>
                                     <div>
                                         <label htmlFor="telefone">Telefone</label>
-                                        <input type="tel" id="telefone" placeholder="1234-5678" />
+                                        <input type="tel" id="telefone" placeholder="1234-5678"
+                                        onChange={(event) => setTelefone(event.target.value)}
+                                         />
                                     </div>
                                 </div>
                                 <div className="form_submit">
@@ -60,16 +89,16 @@ function Editar_perfil_parceiro() {
                                         type="password"
                                         id="senha"
                                         defaultValue="senhasuperforte"
+                                        onChange={(event) => setSenha(event.target.value)}
 
                                     />
                                 </div>
                                 {/* <input type="submit" value="Editar" class="submit_button"> */}
                                 <div className="botoes_editar_perfilParceiro">
-                                    <a className="submit_button_perfilParceiro_cancelar" href="./perfil_parceiro.html">Cancelar</a>
+                                    <input type={'submit'} value="Cancelar" className="submit_button_perfilParceiro_cancelar"/>
 
-                                    <div>
-                                        <a className="submit_button_perfilParceiro_salvar" href="#">Salvar</a>
-                                    </div>
+                                    <input type={'submit'} value="Enviar" className="submit_button_perfilParceiro_salvar"/>
+                               
                                 </div>
                             </form>
                         </div>
