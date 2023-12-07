@@ -58,9 +58,11 @@
 
 #footer .menu_footer ul {
     margin-top: 20px;
+    text-decoration: none !important;
+
 }
 
-#footer .menu_footer li {
+#footer .menu_footer li{
     list-style: none;
     font-family: var(--verdana);
     color: var(--branco);
@@ -70,6 +72,14 @@
     line-height: 28px;
     margin-top: 10px;
     cursor: pointer;
+
+
+
+}
+
+
+#footer .menu_footer a{
+    text-decoration: none ;
 
 }
 
