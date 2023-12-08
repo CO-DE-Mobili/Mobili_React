@@ -9,11 +9,7 @@
 }
 
 .posicionamento_login{
-    width: 100vw;
-    min-width: 1100px;
-    display: flex;
     align-items: center;
-    height: 100vh;
     justify-content: center;
 }
 
@@ -106,7 +102,7 @@
     font-size: 20px;
 }
 
-.container_principal_login .dados_usuario form>div {
+.container_principal_login .dados_usuario form>div:not(:last-child) {
     display: flex;
     flex-direction: column;
 
@@ -138,7 +134,7 @@
 }
 
 .container_principal_login .dados_usuario input {
-    height: 30px;
+    height: 40px;
 }
 
 .container_principal_login .form_checkbox>div {
@@ -154,8 +150,9 @@
 
 .container_principal_login .button_cont {
     border: 2px solid #61D248;
+    background-color: var(--verde);
     border-radius: 4px;
-    color: #61D248;
+    color: var(--azul);
     padding: 10px;
     font-family: var(--verdana);
     text-decoration: none;

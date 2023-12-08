@@ -16,22 +16,22 @@ function Login() {
 
     //variavel navigate que utiliza a funcao useNavigate para navegar entre os componentes
 
-     const navigate = useNavigate();
-    
-     const [email, setEmail] = useState<string>("");
-     const [senha, setSenha] = useState<string>("");
+    const navigate = useNavigate();
+
+    const [email, setEmail] = useState<string>("");
+    const [senha, setSenha] = useState<string>("");
     // // TROCAR TIPO PARA BOOLEANO
     // const [checkboxLogado, setCheckboxLogado] = useState<string>("")
 
-    const loginObj ={
-        email:email,
-        senha:senha
+    const loginObj = {
+        email: email,
+        senha: senha
     }
-    function CadastroFormLogin(event:any){
+    function CadastroFormLogin(event: any) {
         event.preventDefault()
         console.log(loginObj);
 
-}
+    }
 
 
     return (
@@ -40,13 +40,11 @@ function Login() {
                 <div className="conteudo ">
                     <div className="alinhamento_imagens">
                         <div className="image_voltar">
-                            <Link to= {"/"} className="botao_voltar">
-                                {" "}
-                                <img src={imgSeta}/>
-
+                            <Link to={"/"} className="botao_voltar">
+                                <img src={imgSeta} />
                             </Link>
                             <div>
-                                <Link to= {"/"} className="botao_voltar">
+                                <Link to={"/"} className="botao_voltar">
                                     {" "}
                                     Voltar
                                 </Link>
@@ -58,7 +56,7 @@ function Login() {
                     <div className="pagina">
                         <div className="image_voltar_responsivo">
                             <div>
-                                <Link to= {"#"} className="botao_voltar">
+                                <Link to={"#"} className="botao_voltar">
                                     {" "}
                                     Voltar
                                 </Link>
@@ -69,14 +67,14 @@ function Login() {
                             <h1>Acesse sua conta!</h1>
                         </div>
                         <div className="dados_usuario">
-                            <form  onSubmit={CadastroFormLogin}  action="POST">
+                            <form onSubmit={CadastroFormLogin} action="POST">
                                 <div>
                                     <label htmlFor="email">E-mail</label>
                                     <input
                                         type="email"
                                         id="email"
                                         placeholder="Seu E-mail aqui"
-                                         onChange={(e) => setEmail(e.target.value)}
+                                        onChange={(e) => setEmail(e.target.value)}
                                     />
                                 </div>
                                 <div>
@@ -85,36 +83,35 @@ function Login() {
                                         type="password"
                                         placeholder="Digite sua senha"
                                         id="senha"
-                                         onChange={(e) => setSenha(e.target.value)}
+                                        onChange={(e) => setSenha(e.target.value)}
                                     />
                                 </div>
                                 <div className="form_checkbox">
                                     <div>
                                         <input
-                                            type="checkbox" 
-                                            name="" 
+                                            type="checkbox"
+                                            name=""
                                             id=""
-                                            // onChange={(e) => setCheckboxLogado(e.target.value)}
+                                        // onChange={(e) => setCheckboxLogado(e.target.value)}
                                         />
-                                        <Link to= {"#"}>Lembrar de mim</Link>
+                                        <Link to={"#"}>Lembrar de mim</Link>
                                     </div>
                                     <Link to={"/redefinir/senha"}>
                                         Esqueci minha senha
                                     </Link>
                                 </div>
                                 <div className="bc">
-                                    <input type={"submit"} className="button_cont"                                         
+                                    <input type={"submit"} className="button_cont"
                                     />
                                 </div>
                                 <div className="conta_cadastro">
-                            <Link to={"#"}>
-                                <span>Não tem uma conta?</span>
-                            </Link>
-                            <Link to="../Cadastro/usuario" className="spanVerde_login">Cadastrar-se</Link>
-                               </div>
+                                    <Link to={"#"}>
+                                        <span>Não tem uma conta?</span>
+                                    </Link>
+                                    <Link to="../Cadastro/usuario" className="spanVerde_login">Cadastrar-se</Link>
+                                </div>
                             </form>
                         </div>
-                       
                     </div>
                 </div>
             </main>
