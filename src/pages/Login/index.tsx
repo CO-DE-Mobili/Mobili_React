@@ -4,6 +4,8 @@ import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
 import "./style.css";
 
+import api from '../../utils/api';
+import secureLocalStorage from "react-secure-storage";
 //images
 
 // import imgLogo2 from "../../assets/images/logo2.png";
@@ -23,15 +25,29 @@ function Login() {
     // // TROCAR TIPO PARA BOOLEANO
     // const [checkboxLogado, setCheckboxLogado] = useState<string>("")
 
-    const loginObj = {
+    const usuario = {
         email: email,
         senha: senha
     }
     function CadastroFormLogin(event: any) {
         event.preventDefault()
-        console.log(loginObj);
+        console.log(usuario);
+        api.post("parceiro", usuario)
+            .then((response: any) => {
+                console.log(response);
 
+                secureLocalStorage.setItem("user", response.data);
+
+                navigate("/perfil/" + response.data.user.id);
+                navigate(0);
+            })
+            .catch((error: any) => {
+                console.log(error);
+                alert("Erro ao efetuar o login!");
+
+            })
     }
+
 
 
     return (
@@ -67,13 +83,13 @@ function Login() {
                             <h1>Acesse sua conta!</h1>
                         </div>
                         <div className="dados_usuario">
-                            <form onSubmit={CadastroFormLogin} action="POST">
+                            <form onSubmit={CadastroFormLogin} method="POST">
                                 <div>
                                     <label htmlFor="email">E-mail</label>
                                     <input
                                         type="email"
                                         id="email"
-                                        placeholder="Seu E-mail aqui"
+                                        placeholder="Digite aqui seu e-mail:"
                                         onChange={(e) => setEmail(e.target.value)}
                                     />
                                 </div>
@@ -81,7 +97,7 @@ function Login() {
                                     <label htmlFor="senha">Senha</label>
                                     <input
                                         type="password"
-                                        placeholder="Digite sua senha"
+                                        placeholder="Digite aqui sua senha:"
                                         id="senha"
                                         onChange={(e) => setSenha(e.target.value)}
                                     />

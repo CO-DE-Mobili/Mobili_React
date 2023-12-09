@@ -8,6 +8,10 @@ import seta from "../../../assets/images/seta.png";
 import ilustracaologin from "../../../assets/images/ilustra_login.svg";
 import { useState } from "react";
 
+import api from '../../../utils/api';
+
+import InputMask from 'react-input-mask';
+
 function CadastroUsuario() {
 
     const [nome, setNome] = useState<string>("");
@@ -17,35 +21,45 @@ function CadastroUsuario() {
 
     const navigate = useNavigate();
 
-    const cadastroObj={
-        nome :nome,
+    const cadastroObj = {
+        nome: nome,
         email: email,
         telefone: telefone
     }
 
-    function cadastro(event: any) {
-        event.preventDefault()
+function cadastro(event: any) {
+    event.preventDefault();
 
-        function emailValido(email: string) {
-            return /\S+@\S+\.\S+/.test(email);
-        }
-
-        if (!emailValido(email))
-            setError("Email inválido!")
-        else {
-            console.log(email, error);
-            navigate("/cadastro/usuario/etapa2")
-        }
-        console.log(cadastroObj);
+    function emailValido(email: string) {
+        return /\S+@\S+\.\S+/.test(email);
     }
+
+    if (!emailValido(email))
+        setError("Email inválido!");
+    else {
+        console.log(email, error);
+        navigate("/cadastro/usuario/etapa2");
+
+        // Corrigindo a variável usada para enviar os dados da postagem
+        api.post("empresas", cadastroObj)
+            .then((response: any) => {
+                console.log(response);
+                alert("USUÁRIO CADASTRADO COM SUCESSO!!!");
+            })
+            .catch((error: any) => {
+                console.log(error);
+                alert("Falha ao cadastrar um novo usuário");
+            });
+    }
+}
 
 
     function vericarEmail(event: any) {
-        let usuario:string = email.substring(0, email.indexOf("@"));
-        usuario = email.substring(email.indexOf("@")+1);
+        let usuario: string = email.substring(0, email.indexOf("@"));
+        usuario = email.substring(email.indexOf("@") + 1);
         console.log(usuario);
         navigate("/cadastro/usuario/etapa2")
-        
+
     }
 
 
@@ -87,13 +101,13 @@ function CadastroUsuario() {
                             <h1>Crie sua conta!</h1>
                         </div>
                         <div className="dados_usuario">
-                            <form action="" onSubmit={cadastro}>
+                            <form method="POST" onSubmit={cadastro}>
                                 <div>
                                     <label htmlFor="nome">Nome completo</label>
-                                    <input type="text"
-                                        // onChange={(e) => setNome(e.target.value)}
+                                    <input
+                                        type="text"
                                         id="nome"
-                                        placeholder="Maria Joana da Silva"
+                                        placeholder="Digite aqui seu nome:"
                                         onChange={(e) => setNome(e.target.value)}
                                         required
                                     />
@@ -101,8 +115,9 @@ function CadastroUsuario() {
                                 <div>
                                     <label htmlFor="email">E-mail</label>
                                     <input
+                                        type="email"
                                         id="email"
-                                        placeholder="anamaria@yahoo.com"
+                                        placeholder="Digite aqui seu e-mail:"
                                         required
                                         onChange={(e) => setEmail(e.target.value)} />
                                     {error && <span style={{
@@ -114,15 +129,39 @@ function CadastroUsuario() {
                                 </div>
                                 <div>
                                     <label htmlFor="telefone">Telefone</label>
-                                    <input type="text"
-                                        id="email"
+                                    {/* <input
+                                        type="text"
+                                        id="telefone"
                                         placeholder="(11)1234-5678"
                                         onChange={(e) => setTelefone(e.target.value)}
-                                        required />
+                                        required /> */}
+
+                                    <InputMask
+                                        mask="(99)9999-9999"
+                                        maskChar=""
+                                        value={telefone}
+                                        onChange={(e) => setTelefone(e.target.value)}
+                                        placeholder="Coloque seu telefone aqui"
+                                        required
+                                        style={{
+                                            color: 'white',
+                                            padding: '12px 20px',
+                                            margin: '8px 0',
+                                            display: 'inline-block',
+                                            border: '2px solid rgba(203, 210, 220, 0.5)',
+                                            borderRadius: '4px',
+                                            height: '56px',
+                                            width: '100%',
+                                            letterSpacing: '-0.01em',
+                                            fontFamily: 'var(--verdana)'
+                                        }}
+
+                                        
+                                    />
                                 </div>
                                 <div className="bc">
                                     <input className="button_cont"
-                                        type={"submit"}
+                                        type="submit"
                                     />
                                 </div>
                             </form>
@@ -130,7 +169,7 @@ function CadastroUsuario() {
                         <div className="conta_cadastro">
                             <span>Já tem uma conta?</span>
                             <Link to={"/login"}> Se logar</Link></div>
-                            <Link className="button_esqueceusenha" to={"/redefinir/senha"}>Esqueceu a senha?</Link>
+                        <Link className="button_esqueceusenha" to={"/redefinir/senha"}>Esqueceu a senha?</Link>
                     </div>
                 </div>
             </main>
