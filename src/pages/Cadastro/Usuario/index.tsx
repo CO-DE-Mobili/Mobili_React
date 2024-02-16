@@ -45,6 +45,9 @@ function CadastroUsuario() {
         usuario = email.substring(email.indexOf("@")+1);
         console.log(usuario);
         navigate("/cadastro/usuario/etapa2")
+
+
+
         
     }
 
