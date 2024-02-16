@@ -5,24 +5,24 @@ import Menu_parceiro from "../../components/Menu_Aside";
 import { useState } from "react";
 
 const categorias = [
-  { value: 'restaurante', label: 'Restaurante' },
-  { value: 'hamburgueria', label: 'Hamburgueria' },
-  { value: 'posto de Gasolina', label: 'Posto de Gasolina' },
-  { value: 'pizzaria', label: 'Pizzaria' },
-  { value: 'floricultura', label: 'Floricultura' }
+	{ value: 'restaurante', label: 'Restaurante' },
+	{ value: 'hamburgueria', label: 'Hamburgueria' },
+	{ value: 'posto de Gasolina', label: 'Posto de Gasolina' },
+	{ value: 'pizzaria', label: 'Pizzaria' },
+	{ value: 'floricultura', label: 'Floricultura' }
 ]
 
 const paises = [
-	{value: 'brasil', label: 'Brasil'}
+	{ value: 'brasil', label: 'Brasil' }
 ]
 
 
 function CadastroEmpresa() {
 
 	const [nome, setNome] = useState<string>("");
-    const [nomeFantasia, setnomeFantasia] = useState<string>("");
-    const [razaoSocial, setrazaoSocial] = useState<string>("");
-    const [telefoneContato, settelefoneContato] = useState<string>("");
+	const [nomeFantasia, setnomeFantasia] = useState<string>("");
+	const [razaoSocial, setrazaoSocial] = useState<string>("");
+	const [telefoneContato, settelefoneContato] = useState<string>("");
 	const [cpfCnpj, setcpfCnpj] = useState<string>("");
 	const [categoriaServico, setcategoriaServico] = useState<string>("");
 	const [cnae, setcnae] = useState<string>("");
@@ -34,28 +34,27 @@ function CadastroEmpresa() {
 	const [cidade, setcidade] = useState<string>("");
 	const [estado, setestado] = useState<string>("");
 
-	const empresaObj={
+	const empresaObj = {
 
-		nome:nome,
-		nomeFantasia:nomeFantasia,
-		razaoSocial:razaoSocial,
-		telefoneContato:telefoneContato,
-		cpfCnpj:cpfCnpj,
-		categoriaServico:categoriaServico,
-		cnae:cnae,
-		paisRegiao:paisRegiao,
-		endereco:endereco,
-		numero:numero,
-		complemento:complemento,
-		bairro:bairro,
-		cidade:cidade,
-		estado:estado
+		nome: nome,
+		nomeFantasia: nomeFantasia,
+		razaoSocial: razaoSocial,
+		telefoneContato: telefoneContato,
+		cpfCnpj: cpfCnpj,
+		categoriaServico: categoriaServico,
+		cnae: cnae,
+		paisRegiao: paisRegiao,
+		endereco: endereco,
+		numero: numero,
+		complemento: complemento,
+		bairro: bairro,
+		cidade: cidade,
+		estado: estado
 	}
 
-		function CadastroFormEmpresa(event:any){
-			event.preventDefault()
-			console.log(empresaObj);
-
+	function CadastroFormEmpresa(event: any) {
+		event.preventDefault()
+		console.log(empresaObj);
 	}
 
 	return (
@@ -74,9 +73,10 @@ function CadastroEmpresa() {
 										placeholder="Informe o nome da sua empresa"
 										id="nome_empresa"
 										onChange={(e) => setNome(e.target.value)}
-                                        required
-										/>
+										required
+									/>
 								</div>
+
 								<div>
 									<label htmlFor="nome_fantasia">Nome Fantasia</label>
 									<input
@@ -84,8 +84,8 @@ function CadastroEmpresa() {
 										placeholder="Informe o nome fantasia da sua empresa"
 										id="nome_fantasia"
 										onChange={(e) => setnomeFantasia(e.target.value)}
-                                        required
-										/>
+										required
+									/>
 								</div>
 								<div>
 									<label htmlFor="razao_social">Razão Social</label>
@@ -94,8 +94,8 @@ function CadastroEmpresa() {
 										placeholder="Informe a razão social da sua empresa"
 										id="razao_social"
 										onChange={(e) => setrazaoSocial(e.target.value)}
-                                        required
-										/>
+										required
+									/>
 								</div>
 								<div>
 									<label htmlFor="telefone">Telefone de contato</label>
@@ -104,8 +104,8 @@ function CadastroEmpresa() {
 										placeholder="(00) 1234-5678"
 										id="razao_social"
 										onChange={(e) => settelefoneContato(e.target.value)}
-                                        required
-										/>
+										required
+									/>
 								</div>
 							</div>
 							<hr></hr>
@@ -116,12 +116,12 @@ function CadastroEmpresa() {
 									id="cpf"
 									placeholder="CPF/CNPJ"
 									onChange={(e) => setcpfCnpj(e.target.value)}
-                                    required
-									/>
+									required
+								/>
 							</div>
 							<div>
 								<label htmlFor="select_categorias">Categoria de serviço</label>
-								<Select options={categorias} id="select_categorias" className="select_categorias"/>
+								<Select options={categorias} id="select_categorias" className="select_categorias" />
 							</div>
 							<div>
 								<label htmlFor="cnae">CNAE</label>
@@ -130,8 +130,8 @@ function CadastroEmpresa() {
 									placeholder="Informe o CNAE da sua empresa"
 									id="cnae"
 									onChange={(e) => setcnae(e.target.value)}
-                                    required
-									/>
+									required
+								/>
 							</div>
 							<hr></hr>
 							<div>
@@ -149,7 +149,7 @@ function CadastroEmpresa() {
 									placeholder="Nome da rua"
 									id="endereco"
 									onChange={(e) => setendereco(e.target.value)}
-								    required
+									required
 								/>
 							</div>
 							<div>
@@ -159,7 +159,7 @@ function CadastroEmpresa() {
 									placeholder="00"
 									id="numero"
 									onChange={(e) => setnumero(e.target.value)}
-								    required
+									required
 								/>
 							</div>
 							<div>
@@ -169,7 +169,7 @@ function CadastroEmpresa() {
 									placeholder="Apartamento, sala, conjunto, edificio, etc."
 									id="complemento"
 									onChange={(e) => setcomplemento(e.target.value)}
-								    required
+									required
 								/>
 							</div>
 							<div>
@@ -179,7 +179,7 @@ function CadastroEmpresa() {
 									placeholder="Nome do bairro"
 									id="bairro"
 									onChange={(e) => setbairro(e.target.value)}
-								    required
+									required
 								/>
 							</div>
 							<div>
@@ -189,7 +189,7 @@ function CadastroEmpresa() {
 									placeholder=""
 									id="cidade"
 									onChange={(e) => setcidade(e.target.value)}
-								    required
+									required
 								/>
 							</div>
 							<div>
@@ -199,11 +199,11 @@ function CadastroEmpresa() {
 									placeholder=""
 									id="estado"
 									onChange={(e) => setestado(e.target.value)}
-								    required
+									required
 								/>
 							</div>
 							<div className="botao_submit">
-								<input type={"submit"} className="confirmar"/>
+								<input type={"submit"} className="confirmar" />
 							</div>
 						</form>
 					</div>
